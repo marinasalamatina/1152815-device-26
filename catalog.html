@@ -2,167 +2,221 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Гаджеты для фото">
   <link href="#" rel="#">
   <title>Каталог товаров - моноподы для селфи</title>
 </head>
 <body>
   <header>
+    <a href="index.html">
+      <img src="#"
+      width="#"
+      height="#"
+      alt="логотип магазина DEVICE">
+    </a>
+    <form>
+        <button type="submit" alt="Поиск">
+          <img src="#"
+          width="#"
+          height="#">
+        </button>
+      <input type="seach" placeholder="Поиск по сайту">
+    </form>
+    <ul>
+      <li>
+        <a href="#" alt="Валентин Петухов">Валентин Петухов</a>
+      </li>
+      <li>
+        <a href="#" alt="Выйти">Выйти</a>
+      </li>
+      <li>
+        <a href="#" alt="Сравнить">Сравнить</a>
+      </li>
+      <li>
+        <a href="#" alt="Корзина">Корзина</a>
+      </li>
+    </ul>
     <nav>
-      <a><img src="#" width="100" height="50" alt="логотип магазина DEVICE"></a>
-        <ul>
-          <li>
-            <button type="button">Поиск по сайту</button>
-          </li>
-          <li>
-            <button type="button">Валентин Петухов</button>
-          </li>
-          <li>
-            <button type="button">Выйти</button>
-          </li>
-          <li>
-            <button type="button">Сравнить</button>
-          </li>
-          <li>
-            <button type="button">Корзина</button>
-          </li>
-        </ul>
-          <li>
-            <a href="catalog.html">Каталог товаров</a>
-          </li>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+        </li>
+        <li>
+          <a href="#">ДОСТАВКА</a>
+        </li>
+        <li>
+          <a href="#">ГАРАНТИЯ</a>
+        </li>
+        <li>
+          <a href="#">КОНТАКТЫ</a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
     <article>
       <h1>Моноподы для селфи</h1>
-      <nav>
-        <ul>
-          <li>
-            <a href="index.html">Главная</a>
-          </li>
-          <li>
-            <a href="#">Каталог товаров</a>
-          </li>
-          <li>Моноподы для селфи</LI>
-        </ul>
-      </nav>
       <section>
-        <h2>Цвет</h2>
-        <ul>
-          <li>
-            <input type="checkbox" checked>Черный</input>
-          </li>
-          <li>
-            <input type="checkbox">Белый</input>
-          </li>
-          <li>
-            <input type="checkbox" checked>Синий</input>
-          </li>
-          <li>
-            <input type="checkbox" checked>Красный</input>
-          </li>
-          <li>
-            <input type="checkbox">Розовый</input>
-          </li>
-        </ul>
-        <h2>Bluetooth</h2>
+        <nav>
           <ul>
             <li>
-              <input type="checkbox" checked>Есть</input>
+              <a href="index.html">Главная</a>
             </li>
             <li>
-              <input type="checkbox">Нет</input>
+              <a href="#">Каталог товаров</a>
             </li>
+            <li>Моноподы для селфи</li>
           </ul>
-        <p>
-          <a href="#">ПОКАЗАТЬ</a>
-        </p>
+        </nav>
       </section>
+      <aside>
+        <h2>Фильтр товаров</h2>
+        <h3>Цвет</h3>
+          <input type="checkbox" name="color1" value="Черный"checked>Черный<br>
+          <input type="checkbox" name="color2" value="Белый">Белый<br>
+          <input type="checkbox" name="color3" value="Синий" checked>Синий<br>
+          <input type="checkbox" name="color4" value="Красный" checked>Красный<br>
+          <input type="checkbox" name="color5" value="Розовый">Розовый<br>
+        <h3>Bluetooth</h3>
+          <input type="checkbox" name="bluetooth1" value="yes" checked>Есть<br>
+          <input type="checkbox" name="bluetooth2" value="no">Нет<br>
+        <p>
+          <button type="button" alt="Показать">Показать</button>
+        </p>
+      </aside>
       <section>
-        <ul>
-          <li>
-            <img src="item-1"
-             alt="Любительская селфи-палка"
-             width=""
-             height="">
-            <h2>Любительская селфи-палка</h2>
-            <p>500 руб</p>
-          </li>
-          <li>
-            <img src="item-2"
-             alt="Профессиональная селфи-палка"
-             width=""
-             height="">
-            <h2>Профессиональная селфи-палка</h2>
-            <p>1500 руб</p>
-          </li>
-          <li>
-            <img src="item-3"
-             alt="Непотопляемая селфи-палка"
-             width=""
-             height="">
-            <h2>Непотопляемая селфи-палка</h2>
-            <p>2500 руб</p>
-          </li>
-          <li>
-            <img src="item-4"
-             alt="Селфи-палка «Следуй за мной»"
-             width=""
-             height="">
-            <h2>Селфи-палка «Следуй за мной»</h2>
-            <p>4900 руб</p>
-          </li>
-        </ul>
+        <h2>Ассортимент селфи-палок</h2>
+        <figure>
+          <picture>
+            <a href="#">
+              <img src="item-1"
+              width="#"
+              height="#"
+              alt="Любительская селфи-палка">
+            </a>
+          </picture>
+            <figcaption>
+              <h3>
+                <a href="#">
+                  <span>Любительская селфи-палка</span>
+                </a>
+              </h3>
+              <span>500 руб</span>
+            </figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <a href="#">
+              <img src="item-2"
+              width="#"
+              height="#"
+              alt="Профессиональная селфи-палка">
+            </a>
+          </picture>
+          <figcaption>
+            <h3>
+              <a href="#">
+                <span>Профессиональная селфи-палка</span>
+              </a>
+            </h3>
+            <span>1500 руб</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <a href="#">
+              <img src="item-3"
+              width="#"
+              height="#"
+              alt="Непотопляемая селфи-палка">
+            </a>
+          </picture>
+          <figcaption>
+            <h3>
+              <a href="#">
+                <span>Непотопляемая селфи-палка</span>
+              </a>
+            </h3>
+            <span>2500 руб</span>
+          </figcaption>
+        </figure>
+        <figure>
+          <picture>
+            <a href="#">
+              <img src="item-4"
+              width="#"
+              height="#"
+              alt="Селфи-палка «Следуй за мной»">
+            </a>
+          </picture>
+          <figcaption>
+            <h3>
+              <a href="#">
+                <span>Селфи-палка «Следуй за мной»</span>
+              </a>
+            </h3>
+            <span>4900 руб</span>
+          </figcaption>
+        </figure>
       </section>
     </article>
   </main>
   <footer>
-    <a>
-      <img src="index.html" width="100" height="50" alt="логотип магазина DEVICE">
+    <a href="index.html">
+      <img src="#"
+      width="#"
+      height="#"
+      alt="логотип магазина DEVICE">
     </a>
     <ul>
       <li>
-        <button type="button">Валентин Петухов</button>
+        <a href="#" alt="Валентин Петухов">Валентин Петухов</a>
       </li>
       <li>
-        <button type="button">Выйти</button>
+        <a href="#" alt="Выйти">Выйти</a>
       </li>
       <li>
-        <button type="button">Сравнить</button>
+        <a href="#" alt="Сравнить">Сравнить</a>
       </li>
       <li>
-        <button type="button">Корзина</button>
+        <a href="#" alt="Корзина">Корзина</a>
       </li>
     </ul>
     <p> Москва, ул. Строителей, 15</p>
     <p> Тел.: +7 (495) 495-95-95</p>
     <ul>
-      <li>ДОСТАВКА</li>
-      <li>ГАРАНТИЯ</li>
-      <li>КОНТАКТЫ</li>
+      <li>
+        <a href="#" alt="Доставка">ДОСТАВКА</a>
+      </li>
+      <li>
+        <a href="#" alt="Гарантия">ГАРАНТИЯ</a>
+      </li>
+      <li>
+        <a href="#" alt="Контакты">КОНТАКТЫ</a>
+      </li>
     </ul>
     <div>
-      <ul>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-        <li>
-          <a href="#">Твиттер</a>
-        </li>
-      </ul>
+      <a href="#">
+        <img src="#"
+        width="#"
+        height="#"
+        alt="Фейсбук">
+      </a>
+      <a href="#">
+        <img src="#"
+        width="#"
+        height="#"
+        alt="Инстаграм">
+      </a>
+      <a href="#">
+        <img src="#"
+        width="#"
+        height="#"
+        alt="Твиттер">
+      </a>
     </div>
   </footer>
+  <script src="#"></script>
 </body>
 </html>

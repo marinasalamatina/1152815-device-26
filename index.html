@@ -41,7 +41,7 @@
     <nav>
       <ul>
         <li>
-          <a href="catalog.html" alt="Каталог товаров">КАТАЛОГ ТОВАРОВ</a>
+          <a href="" alt="Каталог товаров">КАТАЛОГ ТОВАРОВ</a>
         </li>
         <li>
           <a href="#" alt="Доставка">ДОСТАВКА</a>
@@ -73,8 +73,14 @@
     <section>
       <h2>Контакты</h2>
       <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+      <a href="#">
+        <img src="#"
+        width="#"
+        height="#"
+        alt="Расположение на карте">
+      </a>
       <p>
-        <a href="#">НАПИШИТЕ НАМ</a>
+        <button type="button" alt="Напишите нам">Напишите нам</button>
       </p>
     </section>
   </main>
@@ -84,7 +90,7 @@
     </a>
     <ul>
       <li>
-        <a href="#" alt="Войти">Войти</a>
+        <button type="button" alt="Войти">Войти</button>
       </li>
       <li>
         <a href="#" alt="Сравнить">Сравнить</a>
@@ -128,11 +134,67 @@
     </div>
   </footer>
   <script src="#"></script>
-  <!--скрытый слой (из лекции)-->
+  <!--выпадающее меню-->
   <section>
-    <h2>Личный кабинет</h2>
-    <p>Введите свой логин и пароль.</p>
-    <button type="button">Закрыть</button>
+    <form>
+      <ul>
+        <li>
+          <a href="#" alt="Виртуальная реальность">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="catalog.html" alt="Моноподы для селфи">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="#" alt="Экшн-камеры">Экшн-камеры</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" alt="Фитнес-браслеты">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#" alt="Умные часы">Умные часы</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" alt="Квадрокоптеры">Квадрокоптеры</a>
+        </li>
+      </ul>
+    </form>
+  </section>
+  <!--напишите нам-->
+  <section>
+    <form>
+      <label>
+        <p>Ваше имя:</p>
+        <input type="text" value="Ваше имя" placeholder="Имя Фамилия">
+      </label>
+      <label>
+        <p>Ваш e-mail:</p>
+        <input type="text" value="Ваш e-mail" placeholder="e-mail@example.com">
+      </label>
+      <label>
+        <p>Текст письма:</p>
+        <textarea rows="4" value="Текст письма" placeholder="В свободной форме"></textarea>
+      </label>
+      <button type="submit" alt="Закрыть">Закрыть</button>
+      <p>
+        <button type="button" alt="Отправить">Отправить</button>
+      </p>
+    </form>
+  </section>
+  <!--форма с картой?-->
+  <section>
+    <form>
+      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7">
+        <img src="#"
+        width="#"
+        height="#"
+        alt="Сервис карт GOOGLE">
+      </a>
+      <button type="submit" alt="Закрыть">Закрыть</button>
+    </form>
   </section>
 </body>
 </html>

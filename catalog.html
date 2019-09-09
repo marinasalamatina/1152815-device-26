@@ -10,9 +10,9 @@
 <body>
   <header>
     <a href="index.html">
-      <img src="#"
-      width="#"
-      height="#"
+      <img src="https://via.placeholder.com/150x100"
+      width=""
+      height=""
       alt="логотип магазина DEVICE">
     </a>
     <form>
@@ -40,7 +40,7 @@
     <nav>
       <ul>
         <li>
-          <a href="catalog.html">КАТАЛОГ ТОВАРОВ</a>
+          <a href="#">КАТАЛОГ ТОВАРОВ</a>
         </li>
         <li>
           <a href="#">ДОСТАВКА</a>
@@ -53,25 +53,71 @@
         </li>
       </ul>
     </nav>
+    <!--выпадающее меню-->
+    <div>
+      <form>
+        <ul>
+          <li>
+            <a href="#" alt="Виртуальная реальность">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="catalog.html" alt="Моноподы для селфи">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#" alt="Экшн-камеры">Экшн-камеры</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" alt="Фитнес-браслеты">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#" alt="Умные часы">Умные часы</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" alt="Квадрокоптеры">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </form>
+    </div>
   </header>
   <main>
     <article>
       <h1>Моноподы для селфи</h1>
-      <section>
-        <nav>
-          <ul>
-            <li>
-              <a href="index.html">Главная</a>
-            </li>
-            <li>
-              <a href="#">Каталог товаров</a>
-            </li>
-            <li>Моноподы для селфи</li>
-          </ul>
-        </nav>
-      </section>
+      <nav>
+        <ul>
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог товаров</a>
+          </li>
+          <li>Моноподы для селфи</li>
+        </ul>
+      </nav>
+      <!--Блок управления в каталоге-->
+      <div>
+        <ul>
+          <li>Фильтр:</li>
+          <li>Сортировка:</li>
+          <li>
+            <button type="submit" alt="По цене">По цене</button>
+          </li>
+          <li>
+            <button type="submit" alt="По типу">По типу</button>
+          </li>
+          <li>
+            <button type="submit" alt="По популярности">По популярности</button>
+          </li>
+        </ul>
+      </div>
       <aside>
         <h2>Фильтр товаров</h2>
+        <div>
+          <input type="range" min="0" max="8000" step="1000" value="5000">
+        </div>
         <h3>Цвет</h3>
           <input type="checkbox" name="color1" value="Черный"checked>Черный<br>
           <input type="checkbox" name="color2" value="Белый">Белый<br>
@@ -152,6 +198,16 @@
           </figcaption>
         </figure>
       </section>
+      <!--Пагинация-->
+      <div>
+        <ul>
+          <li><a href="#" alt="Назад">Назад</a></li>
+          <li class=""><a href="#" alt="">1</a></li>
+          <li><a href="#" alt="">2</a></li>
+          <li><a href="#" alt="">3</a></li>
+          <li><a href="#" alt="Вперёд">Вперёд</a></li>
+        </ul>
+      </div>
     </article>
   </main>
   <footer>
@@ -210,41 +266,12 @@
     </div>
   </footer>
   <script src="#"></script>
-  <!--выпадающее меню-->
-  <section>
-    <form>
-      <ul>
-        <li>
-          <a href="#" alt="Виртуальная реальность">Виртуальная реальность</a>
-        </li>
-        <li>
-          <a href="catalog.html" alt="Моноподы для селфи">Моноподы для селфи</a>
-        </li>
-        <li>
-          <a href="#" alt="Экшн-камеры">Экшн-камеры</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#" alt="Фитнес-браслеты">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#" alt="Умные часы">Умные часы</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#" alt="Квадрокоптеры">Квадрокоптеры</a>
-        </li>
-      </ul>
-    </form>
-  </section>
-  <!--aформа карточки товара при наведении-->
-  <section>
+  <!--Форма карточки товара при наведении-->
+  <div>
     <form>
       <button type="button" alt="В корзину">В корзину</button>
       <button type="button" alt="Добавить к сравнению">Добавить к сравнению</button>
     </form>
-  </section>
+  </div>
 </body>
 </html>

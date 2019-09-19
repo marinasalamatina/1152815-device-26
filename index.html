@@ -6,17 +6,19 @@
   <meta name="description" content="Большой выбор гаджетов. Устройства для спорта и развлечений">
   <meta name="keywords" content="фитнес-трекеры,
   смарт-браслеты, умные часы, квадрокоптеры, моноподы">
-  <link href="#" rel="#">
+  <link href="css/style.css" rel="stylesheet">
   <title>DEVICE интернет-магазин</title>
 </head>
 <body>
-  <header>
-      <img src="img/svg/logo-device.svg"
+  <header class="header_index">
+    <div class="logo_device_header">
+      <img  src="img/svg/logo_device.svg"
       width="163px"
       height="35px"
       alt="логотип магазина DEVICE">
+    </div>
     <!--Форма поиска-->
-    <form action="#" method="get">
+    <form class="search_form" action="#" method="get">
       <button type="submit" alt="Поиск">
         <img src="img/svg/search.svg"
         width="16px"
@@ -24,8 +26,11 @@
         alt="Поиск">
       </button>
       <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+      <button class="seach_button" type="submit" alt="Поиск">
+        Поиск
+      </button>
     </form>
-    <ul>
+    <ul class="user_navigation_header">
       <li>
         <a href="#" aria-label="Авторизация">
           <img src="img/svg/user.svg"
@@ -35,8 +40,6 @@
           Войти
         </a>
       </li>
-    </ul>
-    <ul>
       <li>
         <a href="#" aria-label="Сравнение товаров">
           <img src="img/svg/compare.svg"
@@ -57,7 +60,7 @@
       </li>
     </ul>
     <nav aria-label="Основные разделы">
-      <ul>
+      <ul class="main_navigation_header">
         <li>
           <a href="#" aria-haspopup="true">
             <img src="img/svg/plus.svg"
@@ -79,7 +82,7 @@
       </ul>
     </nav>
     <!--выпадающее меню-->
-    <div>
+    <div class="dropdown">
       <ul>
         <li>
           <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
@@ -107,12 +110,12 @@
     </div>
   </header>
   <main>
-    <h1 class="visually-hidden">Интернет-магазин DEVICE</h1>
+    <h1 class="visually_hidden">Интернет-магазин DEVICE</h1>
     <section>
-      <h2>Краткий обзор самых популярных товаров</h2>
+      <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
       <!--1 слайд-->
       <figure>
-        <h3 class="visually-hidden">Самая длинная палка для селфи</h3>
+        <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
         <picture>
           <img src="img/png/01.png"
             width="166px"
@@ -120,7 +123,7 @@
             alt="01">
         </picture>
         <picture>
-          <img src="img/png/slider-1.png"
+          <img src="img/png/slider_1.png"
            width="384px"
            height="486px"
            alt="Самая длинная палка для селфи">
@@ -146,7 +149,7 @@
       </figure>
       <!--2 слайд-->
       <figure>
-        <h3 class="visually-hidden">Фитнес-браслет</h3>
+        <h3 class="visually_hidden">Фитнес-браслет</h3>
         <picture>
           <img src="img/png/02.png"
            width="198px"
@@ -154,7 +157,7 @@
            alt="02">
         </picture>
         <picture>
-          <img src="img/png/slider-2.png"
+          <img src="img/png/slider_2.png"
            width="345px"
            height="485px"
            alt="Фитнес-браслет">
@@ -176,7 +179,7 @@
       </figure>
       <!--3 слайд-->
        <figure>
-       <h3 class="visually-hidden">Квадрокоптер</h3>
+       <h3 class="visually_hidden">Квадрокоптер</h3>
        <picture>
           <img src="img/png/03.png"
           width="201px"
@@ -184,7 +187,7 @@
           alt="03">
        </picture>
         <picture>
-          <img src="img/png/slider-3.png"
+          <img src="img/png/slider_3.png"
            width="526px"
            height="334px"
            alt="Квадрокоптер">
@@ -210,11 +213,11 @@
     </section>
     <!--Картинки-меню с ссылками-->
     <section>
-      <h2 class="visually-hidden">Категории товаров</h2>
+      <h2 class="visually_hidden">Категории товаров</h2>
       <ul>
         <li>
           <a href="#" aria-label="Виртуальная реальность">
-            <img src="img/jpg/popular-1.jpg"
+            <img src="img/jpg/popular_1.jpg"
             width="97px"
             height="55px"
             alt="Упрощенный вид очков для виртуальной реальности">
@@ -223,7 +226,7 @@
         </li>
         <li>
           <a href="catalog.html" aria-label="Моноподы для селфи">
-            <img src="img/jpg/popular-2.jpg"
+            <img src="img/jpg/popular_2.jpg"
             width="86px"
             height="117px"
             alt="Схематичный монопод для селфи">
@@ -232,7 +235,7 @@
         </li>
         <li>
           <a href="#" aria-label="Экшн-камеры">
-            <img src="img/jpg/popular-3.jpg"
+            <img src="img/jpg/popular_3.jpg"
             width="71px"
             height="87px"
             alt="Обобщенный вид экшн-камеры">
@@ -241,7 +244,7 @@
         </li>
         <li>
           <a href="#" aria-label="Фитнес-браслеты">
-            <img src="img/jpg/popular-4.jpg"
+            <img src="img/jpg/popular_4.jpg"
             width="107px"
             height="65px"
             alt="Упрощённый вид фитнес-браслета">
@@ -250,7 +253,7 @@
         </li>
         <li>
           <a href="#" aria-label="Умные часы">
-            <img src="img/jpg/popular-5.jpg"
+            <img src="img/jpg/popular_5.jpg"
             width="56px"
             height="98px"
             alt="Обобщённый вид умных часов">
@@ -259,7 +262,7 @@
         </li>
         <li>
           <a href="#" aria-label="Квадрокоптеры">
-            <img src="img/jpg/popular-6.jpg"
+            <img src="img/jpg/popular_6.jpg"
             width="132px"
             height="69px"
             alt="Упрощённый вид вадрокоптера">
@@ -271,7 +274,7 @@
     <!--Блок с сервисами-->
     <article>
       <section>
-        <h2 class="visually-hidden">Сервисы</h2>
+        <h2 class="visually_hidden">Сервисы</h2>
         <ul>
           <li>
             <a href="#" aria-label="Доставка">Доставка</a>
@@ -316,11 +319,11 @@
     </article>
     <!--Блок с логотипами-->
     <section>
-    <h2  class="visually-hidden">Логотипы партнёров</h2>
+    <h2  class="visually_hidden">Логотипы партнёров</h2>
     <ul>
       <li>
         <a href="#"  aria-label="Сайт партнера №1">
-          <img src="img/png/logo-1.png"
+          <img src="img/png/logo_1.png"
           width="260px"
           height="100px"
           alt="Логотип партнера №1">
@@ -328,7 +331,7 @@
       </li>
       <li>
         <a href="#"  aria-label="Сайт партнера №2">
-          <img src="img/png/logo-2.png"
+          <img src="img/png/logo_2.png"
           width="260px"
           height="100px"
           alt="Логотип партнера №2">
@@ -336,7 +339,7 @@
       </li>
       <li>
         <a href="#"  aria-label="Сайт партнера №3">
-          <img src="img/png/logo-3.png"
+          <img src="img/png/logo_3.png"
           width="260px"
           height="100px"
           alt="Логотип партнера №3">
@@ -344,7 +347,7 @@
       </li>
       <li>
         <a href="#" aria-label="Сайт партнера №4">
-          <img src="img/png/logo-4.png"
+          <img src="img/png/logo_4.png"
           width="260px"
           height="100px"
           alt="Логотип партнера №4">
@@ -352,7 +355,7 @@
       </li>
     </ul>
     </section>
-    <section>
+    <section class>
       <h2>О нас</h2>
       <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
       <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
@@ -376,13 +379,13 @@
       </a>
       <!--попап с картой-->
       <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
-        <img src="img/png/map-big.png"
+        <img src="img/png/map_big.png"
         width="994px"
         height="593px"
         alt="Большая карта с расположением офиса по адресу: Москва, улица Строителей, дом 15">
       </a>
       <button type="button" alt="Закрыть">
-        <img src="img/svg/modal-close.svg"
+        <img src="img/svg/modal_close.svg"
         width="55px"
         height="55px">
       </button>
@@ -392,15 +395,15 @@
     </section>
     <!--напишите нам-->
     <form method="POST" action="#">
-      <label class="visually-hidden" for="input-name">Ваше имя:</label>
+      <label class="visually_hidden" for="input_name">Ваше имя:</label>
       <input type="text"
-      id="input-name"
+      id="input_name"
       name="name"
       value="name"
       placeholder="Имя Фамилия">
-      <label class="visually-hidden" for="input-e-mail">Ваш e-mail:</label>
+      <label class="visually_hidden" for="input_e_mail">Ваш e-mail:</label>
       <input type="text"
-       id="input-e-mail"
+       id="input_e_mail"
        name="e-mail"
        value="e-mail"
        placeholder="e-mail@example.com">
@@ -416,21 +419,23 @@
       </p>
     </form>
     <button type="button" aria-label="Закрыть">
-      <img src="img/svg/modal-close.svg"
+      <img src="img/svg/modal_close.svg"
       width="55px"
       height="55px"
       alt="Закрыть">
     </button>
   </main>
   <footer>
-    <img src="img/svg/logo-device.svg"
-    width="163px"
-    height="35px"
-    alt="логотип магазина DEVICE">
-    <ul>
+    <div class="logo_device_footer">
+      <img src="img/png/logo_device.png"
+      width="163px"
+      height="35px"
+      alt="логотип магазина DEVICE">
+    </div>
+    <ul class="user_navigation_footer">
       <li>
         <a href="№" aria-label="Авторизация">
-          <img src="img/svg/user.svg"
+          <img src="img/png/user.png"
           width="13px"
           height="12px"
           alt="Авторизация">
@@ -439,7 +444,7 @@
       </li>
       <li>
         <a href="#" aria-label="Сравнить">
-          <img src="img/svg/compare.svg"
+          <img src="img/png/compare.png"
           width="10px"
           height="10px"
           alt="Сравнение товаров">
@@ -448,7 +453,7 @@
       </li>
       <li>
         <a href="#" aria-label="Корзина">
-          <img src="img/svg/cart.svg"
+          <img src="img/png/cart.png"
           width="12px"
           height="12px"
           alt="Корзина">
@@ -458,7 +463,7 @@
     </ul>
       <p> Москва, ул. Строителей, 15</p>
       <p> Тел.: +7 (495) 495-95-95</p>
-    <ul>
+    <ul class="servis_navigation_footer">
       <li>
         <a href="#" aria-label="Доставка">Доставка</a>
       </li>
@@ -469,7 +474,7 @@
         <a href="#" aria-label="Контакты">Контакты</a>
       </li>
     </ul>
-    <div>
+    <div class="social">
       <a href="#" aria-label="Магазин DEVICE в Фейсбуке">
         <img src="img/svg/facebook.svg"
         width="32px"
@@ -489,13 +494,15 @@
         alt="Логотип Твиттера">
       </a>
     </div>
+    <div class="logo_html">
       <a href="https://htmlacademy.ru/intensive/htmlcss"
        aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1» в HTML Academia">
-        <img src="img/svg/logo-html.svg"
+        <img src="img/png/logo_html.png"
         width="27px"
         height="35px"
         alt="Логотип HTML Academia">
       </a>
+    </div>
   </footer>
   <script src="#"></script>
 </body>

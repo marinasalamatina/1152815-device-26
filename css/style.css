@@ -473,7 +473,7 @@ footer {
   line-height: 24px;
   font-weight: bold;
 }
-.pagination_list_neactual {
+.pagination_list_neactual a {
   color: #a4a4a4;
   opacity: 0.3;
 }

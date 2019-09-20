@@ -1,17 +1,23 @@
 @font-face {
-  font-family: "OpenSans";
+  font-family: "OpenSans-Light";
   src: url("fonts/OpenSans-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "OpenSans-Regular";
+  src: url("fonts/OpenSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gilroy-Extrabold";
   src: url("fonts/Gilroy-Extrabold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light";
   src: url("fonts/Gilroy-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
@@ -19,7 +25,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "OpenSans";
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: normal;
@@ -51,7 +57,7 @@ footer {
 }
 .main_navigation_header a {
   text-transform: uppercase;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-weight: bold;
   letter-spacing: 4px;
 }
@@ -67,12 +73,15 @@ footer {
 .main_navigation_header:focus {
   color: #635a3c;
 }
+.dropdown {
+  line-height: 36px;
+}
 .dropdown li:hover,
 .dropdown li:focus {
   color: #635a35;
 }
 .dropdown li:active {
-  color:#ac9d5c;
+  color: #ac9d5c;
 }
 .servis_navigation_footer a {
   color: #ffffff;
@@ -198,7 +207,7 @@ footer {
   overflow: hidden;
 }
 .page_title_catalog {
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-size: 47px;
   line-height: 48px;
   font-weight: bold;
@@ -210,7 +219,7 @@ footer {
 .breadcrumbs a {
   color: #b2b2b2;
   opacity: 0.3;
-  font-family: "OpenSans";
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -227,7 +236,7 @@ footer {
 .breadcrumbs_actual {
   color: #b2b2b2;
   opacity: 0.3;
-  font-family: "OpenSans";
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 24px;
   font-weight: normal;
@@ -235,7 +244,7 @@ footer {
 .catalog_list_control {
   background-image: url(../img/png/background_sorting_katalog.png);
   color: #000000;
-  font-family: "OpenSans";
+  font-family: "OpenSans-Regular", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: normal;
@@ -250,7 +259,7 @@ footer {
 .catalog_sort {
   list-style: none;
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -277,14 +286,14 @@ footer {
 }
 .catalog_items_filter h3 {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
 }
 .catalog_items_filter label {
   color: #000000;
-  font-family: "OpenSans";
+  font-family: "OpenSans-Light", Helvetica, sans-serif;
   font-size: 14px;
   line-height: 40px;
   font-weight: normal;
@@ -293,14 +302,14 @@ footer {
   background: transparent;
   border: none;
   text-transform: uppercase;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-size: 18px;
   font-weight: bold;
   letter-spacing: 4px;
 }
 .catalog-category {
   color: #000000;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: bold;
@@ -308,8 +317,32 @@ footer {
 
 .catalog-price {
   color: #464646;
-  font-family: "Gilroy";
+  font-family: "Gilroy-Light", "Gill Sans", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: normal;
+}
+.info_device h2 {
+  color: #000000;
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: bold;
+}
+.info_device p {
+  color: #525252;
+}
+.list_carriers {
+  color: #000000;
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
+  font-weight: bold;
+}
+.info_device a {
+  font-family: "Gilroy-Extrabold", "Gill Sans", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+  letter-spacing: 4px;
 }

@@ -250,13 +250,23 @@
       </section>
     </main>
     <!--Пагинация-->
-    <div>
-      <ul>
-        <li><button type="button">Назад</button></li>
-        <li><a href="#" aria-label="page1">1</a></li>
-        <li><a href="#" aria-label="page2">2</a></li>
-        <li><a href="#" aria-label="page3">3</a></li>
-        <li><button type="button">Вперёд</button></li>
+    <div class="pagination">
+      <ul class="pagination-list">
+        <li>
+          <button type="button">Назад</button>
+        </li>
+        <li class="pagination_list_actual">
+          <a href="#" aria-label="page1">1</a>
+        </li>
+        <li class="pagination_list_neactual">
+          <a href="#" aria-label="page2">2</a>
+        </li>
+        <li class="pagination_list_neactual">
+          <a href="#" aria-label="page3">3</a>
+        </li>
+        <li>
+          <button type="button">Вперед</button>
+        </li>
       </ul>
     </div>
   </article>

@@ -8,105 +8,112 @@
   <title>Каталог товаров - моноподы для селфи</title>
 </head>
 <body>
-  <header class="header_catalog">
-    <div class="logo_device_header">
-      <a href="index.html" aria-label="Главная страница магазина DEVICE">
-        <img src="img/svg/logo_device.svg"
-        width="163px"
-        height="35px"
-        alt="логотип магазина DEVICE">
-      </a>
-    </div>
-    <!--Форма поиска-->
-    <form class="search_form" action="#" method="get">
-      <button type="submit" alt="Поиск">
-        <img src="img/svg/search.svg"
-        width="16px"
-        height="16px"
-        alt="Поиск">
-      </button>
-      <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-    </form>
-    <ul class="user_navigation_header">
-      <li>
-        <a href="#" aria-label="Валентин Петухов">
-          <img src="img/svg/user.svg"
+  <header>
+    <div class="header_catalog">
+      <div class="logo_device_header">
+        <a href="index.html" aria-label="Главная страница магазина DEVICE">
+          <img src="img/svg/logo_device.svg"
+          width="163px"
+          height="35px"
+          alt="логотип магазина DEVICE">
+        </a>
+      </div>
+      <!--Форма поиска-->
+      <form class="search_form" action="#" method="get">
+        <button class="search_form_button" type="submit" alt="Поиск">
+          <img src="img/svg/search.svg"
           width="16px"
-          height="15px"
-          alt="Логотип Валентина Петухова">
-          Валентин Петухов
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Выйти">Выйти</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Сравнить">
-          <img src="img/svg/compare.svg"
-          width="10px"
-          height="10px"
-          alt="Сравнение товаров">
-          Сравнить
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Корзина">
-          <img src="img/svg/cart.svg"
-          width="12px"
-          height="12px"
-          alt="Корзина">
-          Корзина
-        </a>
-      </li>
-    </ul>
-    <nav aria-label="Основные разделы">
-      <ul class="main_navigation_header">
+          height="16px"
+          alt="Поиск">
+        </button>
+        <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+        <div class="visually_hidden">
+          <button class="seach_button" type="submit" alt="Поиск">
+            Поиск
+          </button>
+        </div>
+      </form>
+      <ul class="user_navigation_header_catalog">
         <li>
-          <a href="#" aria-label="Каталог товаров">
-            <img src="img/svg/plus.svg"
+          <a href="#" aria-label="Валентин Петухов">
+            <img src="img/svg/user.svg"
             width="16px"
-            height="16px"
-            alt="Каталог товаров">
-            Каталог товаров
+            height="15px"
+            alt="Логотип Валентина Петухова">
+            Валентин Петухов
+          </a>
+        </li>
+        <li class="catalog_user_exit">
+          <a href="#" aria-label="Выйти">Выйти</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Сравнить">
+            <img src="img/svg/compare.svg"
+            width="10px"
+            height="10px"
+            alt="Сравнение товаров">
+            Сравнить
           </a>
         </li>
         <li>
-          <a href="#" aria-label="Доставка">Доставка</a>
-        </li>
-        <li>
-          <a href="#" aria-label="Гарантия">Гарантия</a>
-        </li>
-        <li>
-          <a href="#" aria-label="Контакты">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <!--выпадающее меню-->
-    <div class="dropdown">
-      <ul>
-        <li>
-          <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
-        </li>
-        <li>
-          <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
-        </li>
-        <li>
-          <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
+          <a href="#" aria-label="Корзина">
+            <img src="img/svg/cart.svg"
+            width="12px"
+            height="12px"
+            alt="Корзина">
+            Корзина
+          </a>
         </li>
       </ul>
-      <ul>
-        <li>
-          <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
-        </li>
-        <li>
-          <a href="#" aria-label="Умные часы">Умные часы</a>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
-        </li>
-      </ul>
+      <nav aria-label="Основные разделы">
+        <ul class="main_navigation_header">
+          <li>
+            <a class="plus" href="#" aria-label="Каталог товаров">
+              Каталог товаров
+              <img src="img/png/plus.png"
+              width="16px"
+              height="16px"
+              alt="Каталог товаров">
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Доставка">Доставка</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Гарантия">Гарантия</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Контакты">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <!--выпадающее меню-->
+      <div class="dropdown">
+        <ul>
+          <li>
+            <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Умные часы">Умные часы</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </header>
   <article>
@@ -123,60 +130,64 @@
       </ul>
     </nav>
     <!--Блок управления в каталоге-->
-    <aside class="catalog_list_control">
-      <ul>
-        <li class="catalog_sort">Сортировка:</li>
-        <li class="catalog_list_actual">
-          <button type="submit">По цене</button>
-        </li>
-        <li class="catalog_list_neactual">
-          <button type="submit">По типу</button>
-        </li>
-        <li class="catalog_list_neactual">
-          <button type="submit">По популярности</button>
-        </li>
-        <li >
-          <button type="submit" aria-label="По возрастанию">
-            <img src="img/svg/icon_up_dir.svg"
-            width="11px"
-            height="10px"
-            alt="По возрастанию">
-          </button>
-        </li>
-        <li>
-          <button type="button" aria-label="По убыванию">
-            <img src="img/svg/icon_down_dir.svg"
-            width="11px"
-            height="10px"
-            alt="По убыванию">
-          </button>
+    <div class="catalog_main_content">
+      <aside class="catalog_list_control">
+        <ul class="catalog_list_control_container">
+          <li class="catalog_sort">Сортировка:</li>
+          <li class="catalog_list_actual">
+            <button type="submit">По цене</button>
           </li>
-      </ul>
-    </aside>
-    <aside class="catalog_items_filter">
-      <h2 class="catalog_sort">Фильтр:</h2>
-      <h3>Стоимость</h3>
-      <input type="range" aria-label="Диапазон цен" min="0" max="8000" step="1000" value="5000">
-      <h3>Цвет</h3>
-      <input type="checkbox" id="black" name="color1" value="Черный"checked>
-      <label for="black">Черный</label><br>
-      <input type="checkbox" id="white" name="color2" value="Белый">
-      <label for="white">Белый</label><br>
-      <input type="checkbox" id="blue" name="color3" value="Синий" checked>
-      <label for="blue">Синий</label><br>
-      <input type="checkbox" id="red" name="color4" value="Красный" checked>
-      <label for="red">Красный</label><br>
-      <input type="checkbox" id="pink" name="color5" value="Розовый">Розовый
-      <label for="pink">Розовый</label><br>
-      <h3>Bluetooth</h3>
-      <input type="radio" id="bluetooth_yes" name="bluetooth" value="bluetooth_yes" checked>
-      <label for="bluetooth_yes">Есть</label><br>
-      <input type="radio" id="bluetooth_no" name="bluetooth" value="bluetooth_no">
-      <label for="bluetooth_no">Нет</label>
-      <p>
-        <button type="submit" alt="Показать">Показать</button>
-      </p>
-    </aside>
+          <li class="catalog_list_neactual">
+            <button type="submit">По типу</button>
+          </li>
+          <li class="catalog_list_neactual">
+            <button type="submit">По популярности</button>
+          </li>
+          <li >
+            <button type="submit" aria-label="По возрастанию">
+              <img src="img/svg/icon_up_dir.svg"
+              width="11px"
+              height="10px"
+              alt="По возрастанию">
+            </button>
+          </li>
+          <li>
+            <button type="button" aria-label="По убыванию">
+              <img src="img/svg/icon_down_dir.svg"
+              width="11px"
+              height="10px"
+              alt="По убыванию">
+            </button>
+          </li>
+        </ul>
+      </aside>
+      <aside class="catalog_items_filter">
+        <div class="catalog_items_filter_container">
+          <h2 class="catalog_sort">Фильтр:</h2>
+          <h3>Стоимость</h3>
+          <input type="range" aria-label="Диапазон цен" min="0" max="8000" step="1000" value="5000">
+          <h3>Цвет</h3>
+          <input type="checkbox" id="black" name="color1" value="Черный"checked>
+          <label for="black">Черный</label><br>
+          <input type="checkbox" id="white" name="color2" value="Белый">
+          <label for="white">Белый</label><br>
+          <input type="checkbox" id="blue" name="color3" value="Синий" checked>
+          <label for="blue">Синий</label><br>
+          <input type="checkbox" id="red" name="color4" value="Красный" checked>
+          <label for="red">Красный</label><br>
+          <input type="checkbox" id="pink" name="color5" value="Розовый">Розовый
+          <label for="pink">Розовый</label><br>
+          <h3>Bluetooth</h3>
+          <input type="radio" id="bluetooth_yes" name="bluetooth" value="bluetooth_yes" checked>
+          <label for="bluetooth_yes">Есть</label><br>
+          <input type="radio" id="bluetooth_no" name="bluetooth" value="bluetooth_no">
+          <label for="bluetooth_no">Нет</label>
+          <p>
+            <button type="submit" alt="Показать">Показать</button>
+          </p>
+        </div>
+      </aside>
+    </div>
     <main>
       <section class="catalog">
         <h2 class="visually_hidden">Ассортимент селфи-палок</h2>
@@ -271,90 +282,100 @@
     </div>
   </article>
   <footer>
-    <div class="logo_device_footer">
-      <a href="index.html" aria-label="Главная страница магазина DEVICE">
-        <img src="img/png/logo_device.png"
-        width="163px"
-        height="35px"
-        alt="логотип магазина DEVICE">
-      </a>
+    <div class="footer_catalog">
+      <div class="footer_catalog_container">
+        <div class="logo_device_footer">
+          <a href="index.html" aria-label="Главная страница магазина DEVICE">
+            <img src="img/png/logo_device.png"
+            width="163px"
+            height="35px"
+            alt="логотип магазина DEVICE">
+          </a>
+        </div>
+        <ul class="user_navigation_footer_catalog">
+          <li>
+            <a href="#" aria-label="Валентин Петухов">
+              <img src="img/png/user.png"
+              width="16px"
+              height="15px"
+              alt="Логотип Валентина Петухова">
+              Валентин Петухов
+            </a>
+          </li>
+          <li class="catalog_user_exit_footer">
+            <a href="#" aria-label="Выйти">Выйти</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Сравнить">
+              <img src="img/png/compare.png"
+              width="10px"
+              height="10px"
+              alt="Сравнение товаров">
+              Сравнить
+            </a>
+          </li>
+          <li>
+            <a href="#" aria-label="Корзина">
+              <img src="img/png/cart.png"
+              width="12px"
+              height="12px"
+              alt="Корзина">
+              Корзина
+            </a>
+          </li>
+        </ul>
+        <p> Москва, ул. Строителей, 15</p>
+        <ul class="servis_navigation_footer">
+          <li>
+            <a href="#" aria-label="Доставка">Доставка</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Гарантия">Гарантия</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Контакты">Контакты</a>
+          </li>
+        </ul>
+        <p> Тел.: +7 (495) 495-95-95</p>
+        <img class="line_footer" src="img/png/line_footer.png"
+        width="80px"
+        height="7px"
+        alt="Декоративная черта">
+        <div class="social">
+          <a href="#" aria-label="Магазин DEVICE в Фейсбуке">
+            <img src="img/svg/facebook.svg"
+            width="32px"
+            height="32px"
+            alt="Логотип Фейсбука">
+          </a>
+          <a href="#" aria-label="Магазин DEVICE в Инстаграме">
+            <img src="img/svg/instagram.svg"
+            width="32px"
+            height="32px"
+            alt="Логотип Инстаграма">
+          </a>
+          <a href="#" aria-label="Магазин DEVICE в Твиттере">
+            <img src="img/svg/twitter.svg"
+            width="32px"
+            height="32px"
+            alt="Логотип Твиттера">
+          </a>
+        </div>
+        <div class="logo_html">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"
+           aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1» в HTML Academia">
+            <img src="img/png/logo_html.png"
+            width="27px"
+            height="35px"
+            alt="Логотип HTML Academia">
+          </a>
+        </div>
+      </div>
     </div>
-    <ul class="user_navigation_footer">
-      <li>
-        <a href="#" aria-label="Валентин Петухов">
-          <img src="img/png/user.png"
-          width="16px"
-          height="15px"
-          alt="Логотип Валентина Петухова">
-          Валентин Петухов
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Выйти">Выйти</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Сравнить">
-          <img src="img/png/compare.png"
-          width="10px"
-          height="10px"
-          alt="Сравнение товаров">
-          Сравнить
-        </a>
-      </li>
-      <li>
-        <a href="#" aria-label="Корзина">
-          <img src="img/png/cart.png"
-          width="12px"
-          height="12px"
-          alt="Корзина">
-          Корзина
-        </a>
-      </li>
-    </ul>
-    <p> Москва, ул. Строителей, 15</p>
-    <p> Тел.: +7 (495) 495-95-95</p>
-    <ul class="servis_navigation_footer">
-      <li>
-        <a href="#" aria-label="Доставка">Доставка</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Гарантия">Гарантия</a>
-      </li>
-      <li>
-        <a href="#" aria-label="Контакты">Контакты</a>
-      </li>
-    </ul>
-    <div class="social">
-      <a href="#" aria-label="Магазин DEVICE в Фейсбуке">
-        <img src="img/svg/facebook.svg"
-        width="32px"
-        height="32px"
-        alt="Логотип Фейсбука">
-      </a>
-      <a href="#" aria-label="Магазин DEVICE в Инстаграме">
-        <img src="img/svg/instagram.svg"
-        width="32px"
-        height="32px"
-        alt="Логотип Инстаграма">
-      </a>
-      <a href="#" aria-label="Магазин DEVICE в Твиттере">
-        <img src="img/svg/twitter.svg"
-        width="32px"
-        height="32px"
-        alt="Логотип Твиттера">
-      </a>
-    </div>
-    <a href="https://htmlacademy.ru/intensive/htmlcss"
-     aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1» в HTML Academia">
-      <img src="img/png/logo_html.png"
-      width="27px"
-      height="35px"
-      alt="Логотип HTML Academia">
-    </a>
   </footer>
   <script src="#"></script>
   <!--Форма карточки товара при наведении-->
-  <div>
+  <div class="visually_hidden">
       <button type="submit">В корзину</button>
       <button type="submit">Добавить к сравнению</button>
   </div>

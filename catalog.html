@@ -10,7 +10,7 @@
 </head>
 <body>
   <header>
-    <div class="header_catalog">
+    <div class="header_catalog_container">
       <div class="logo_device_header">
         <a href="index.html" aria-label="Главная страница магазина DEVICE">
           <img src="img/svg/logo_device.svg"
@@ -19,102 +19,104 @@
           alt="логотип магазина DEVICE">
         </a>
       </div>
-      <!--Форма поиска-->
-      <form class="search_form" action="#" method="get">
-        <button class="search_form_button" type="submit" alt="Поиск">
-          <img src="img/svg/search.svg"
-          width="16px"
-          height="16px"
-          alt="Поиск">
-        </button>
-        <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-        <div class="visually_hidden">
-          <button class="seach_button" type="submit" alt="Поиск">
-            Поиск
-          </button>
-        </div>
-      </form>
-      <ul class="user_navigation_header_catalog">
-        <li>
-          <a href="#" aria-label="Валентин Петухов">
-            <img src="img/svg/user.svg"
+      <div class="header_catalog">
+        <!--Форма поиска-->
+        <form class="search_form" action="#" method="get">
+          <button class="search_form_button" type="submit" alt="Поиск">
+            <img src="img/svg/search.svg"
             width="16px"
-            height="15px"
-            alt="Логотип Валентина Петухова">
-            Валентин Петухов
-          </a>
-        </li>
-        <li class="catalog_user_exit">
-          <a href="#" aria-label="Выйти">Выйти</a>
-        </li>
-        <li>
-          <a href="#" aria-label="Сравнить">
-            <img src="img/svg/compare.svg"
-            width="10px"
-            height="10px"
-            alt="Сравнение товаров">
-            Сравнить
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Корзина">
-            <img src="img/svg/cart.svg"
-            width="12px"
-            height="12px"
-            alt="Корзина">
-            Корзина
-          </a>
-        </li>
-      </ul>
-      <nav aria-label="Основные разделы">
-        <ul class="main_navigation_header">
+            height="16px"
+            alt="Поиск">
+          </button>
+          <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+          <div class="visually_hidden">
+            <button class="seach_button" type="submit" alt="Поиск">
+              Поиск
+            </button>
+          </div>
+        </form>
+        <ul class="user_navigation_header_catalog">
           <li>
-            <a class="plus" href="#" aria-label="Каталог товаров">
-              Каталог товаров
-              <img src="img/png/plus.png"
+            <a href="#" aria-label="Валентин Петухов">
+              <img src="img/svg/user.svg"
               width="16px"
-              height="16px"
-              alt="Каталог товаров">
+              height="15px"
+              alt="Логотип Валентина Петухова">
+              Валентин Петухов
+            </a>
+          </li>
+          <li class="catalog_user_exit">
+            <a href="#" aria-label="Выйти">Выйти</a>
+          </li>
+          <li>
+            <a href="#" aria-label="Сравнить">
+              <img src="img/svg/compare.svg"
+              width="10px"
+              height="10px"
+              alt="Сравнение товаров">
+              Сравнить
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Доставка">Доставка</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Гарантия">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Контакты">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <!--выпадающее меню-->
-      <div class="dropdown">
-        <ul>
-          <li>
-            <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
+            <a href="#" aria-label="Корзина">
+              <img src="img/svg/cart.svg"
+              width="12px"
+              height="12px"
+              alt="Корзина">
+              Корзина
+            </a>
           </li>
         </ul>
-        <ul>
-          <li>
-            <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Умные часы">Умные часы</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
-          </li>
-        </ul>
+        <nav aria-label="Основные разделы">
+          <ul class="main_navigation_header">
+            <li>
+              <a class="plus" href="#" aria-label="Каталог товаров">
+                Каталог товаров
+                <img src="img/png/plus.png"
+                width="16px"
+                height="16px"
+                alt="Каталог товаров">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Доставка">Доставка</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Гарантия">Гарантия</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
       </div>
+    </div>
+    <!--выпадающее меню-->
+    <div class="dropdown dropdown_catalog visually_hidden">
+      <ul>
+        <li>
+          <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
+        </li>
+        <li>
+          <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
+        </li>
+        <li>
+          <a href="#" aria-label="Умные часы">Умные часы</a>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
+        </li>
+      </ul>
     </div>
   </header>
   <div class="catalog_container">
@@ -247,10 +249,21 @@
               </figure>
               <figure class="catalog_item">
                 <picture>
-                  <img src="img/jpg/item_4.jpg"
-                  width="360px"
-                  height="380px"
-                  alt="Селфи-палка «Следуй за мной»">
+                  <div class="new_item">
+                    <img src="img/jpg/item_4.jpg"
+                    width="360px"
+                    height="380px"
+                    alt="Селфи-палка «Следуй за мной»">
+                    <div class="icon_new">
+                      <img src="img/png/new.png"
+                      width="60px"
+                      height="60px"
+                      alt="NEW">
+                      <div class="text_new">
+                      new
+                     </div>
+                    </div>
+                  </div>
                 </picture>
                 <figcaption class="catalog_items_info">
                   <h3>
@@ -261,31 +274,27 @@
                   <span class="catalog-price">4900 руб</span>
                 </figcaption>
               </figure>
-              <div class="visually_hidden">
-                <img src="img/png/new.png" alt="NEW">
+              <div class="pagination">
+                <ul class="pagination-list">
+                  <li>
+                    <button type="button">Назад</button>
+                  </li>
+                  <li class="pagination_list_actual">
+                    <a href="#" aria-label="page1">1</a>
+                  </li>
+                  <li class="pagination_list_neactual">
+                <a href="#" aria-label="page2">2</a>
+                  </li>
+                  <li class="pagination_list_neactual">
+                    <a href="#" aria-label="page3">3</a>
+                  </li>
+                  <li>
+                    <button type="button">Вперед</button>
+                  </li>
+                </ul>
               </div>
             </section>
           </main>
-          <!--Пагинация-->
-          <div class="pagination">
-            <ul class="pagination-list">
-              <li>
-                <button type="button">Назад</button>
-              </li>
-              <li class="pagination_list_actual">
-                <a href="#" aria-label="page1">1</a>
-              </li>
-              <li class="pagination_list_neactual">
-            <a href="#" aria-label="page2">2</a>
-              </li>
-              <li class="pagination_list_neactual">
-                <a href="#" aria-label="page3">3</a>
-              </li>
-              <li>
-                <button type="button">Вперед</button>
-              </li>
-            </ul>
-          </div>
         </div>
       </div>
     </article>

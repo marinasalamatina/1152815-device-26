@@ -12,81 +12,83 @@
 </head>
 <body>
   <header>
-    <div class="header_index">
+    <div class="header_index_container">
       <div class="logo_device_header">
         <img  src="img/svg/logo_device.svg"
         width="163px"
         height="35px"
         alt="логотип магазина DEVICE">
       </div>
-      <!--Форма поиска-->
-      <form class="search_form" action="#" method="get">
-        <button class="search_form_button" type="submit" alt="Поиск">
-          <img src="img/svg/search.svg"
-          width="16px"
-          height="16px"
-          alt="Поиск">
-        </button>
-        <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-        <div class="visually_hidden">
-          <button class="seach_button" type="submit" alt="Поиск">
-            Поиск
+      <div class="header_index">
+        <!--Форма поиска-->
+        <form class="search_form" action="#" method="get">
+          <button class="search_form_button" type="submit" alt="Поиск">
+            <img src="img/svg/search.svg"
+            width="16px"
+            height="16px"
+            alt="Поиск">
           </button>
-        </div>
-      </form>
-      <ul class="user_navigation_header">
-        <li>
-          <a href="#" aria-label="Авторизация">
-            <img src="img/svg/user.svg"
-            width="13px"
-            height="12px"
-            alt="Авторизация">
-            Войти
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Сравнение товаров">
-            <img src="img/svg/compare.svg"
-            width="10px"
-            height="10px"
-            alt="Сравнение товаров">
-            Сравнить
-          </a>
-        </li>
-        <li>
-          <a href="#" aria-label="Корзина">
-            <img src="img/svg/cart.svg"
-            width="12px"
-            height="12px"
-            alt="Корзина">
-            Корзина
-          </a>
-        </li>
-      </ul>
-      <nav aria-label="Основные разделы">
-        <ul class="main_navigation_header">
+          <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+          <div class="visually_hidden">
+            <button class="seach_button" type="submit" alt="Поиск">
+              Поиск
+            </button>
+          </div>
+        </form>
+        <ul class="user_navigation_header">
           <li>
-            <a class="plus" href="#" aria-haspopup="true">
-                Каталог товаров
-              <img src="img/png/plus.png"
-              width="16px"
-              height="16px"
-              alt="Каталог товаров">
+            <a href="#" aria-label="Авторизация">
+              <img src="img/svg/user.svg"
+              width="13px"
+              height="12px"
+              alt="Авторизация">
+              Войти
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Доставка">Доставка</a>
+            <a href="#" aria-label="Сравнение товаров">
+              <img src="img/svg/compare.svg"
+              width="10px"
+              height="10px"
+              alt="Сравнение товаров">
+              Сравнить
+            </a>
           </li>
           <li>
-            <a href="#" aria-label="Гарантии">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Контакты">Контакты</a>
+            <a href="#" aria-label="Корзина">
+              <img src="img/svg/cart.svg"
+              width="12px"
+              height="12px"
+              alt="Корзина">
+              Корзина
+            </a>
           </li>
         </ul>
-      </nav>
+        <nav aria-label="Основные разделы">
+          <ul class="main_navigation_header">
+            <li>
+              <a class="plus" href="#" aria-haspopup="true">
+                  Каталог товаров
+                <img src="img/png/plus.png"
+                width="16px"
+                height="16px"
+                alt="Каталог товаров">
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Доставка">Доставка</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Гарантии">Гарантия</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <!--выпадающее меню-->
-      <div class="dropdown">
+      <div class="dropdown visually_hidden">
         <ul>
           <li>
             <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
@@ -119,114 +121,135 @@
     <section>
       <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
       <!--1 слайд-->
-      <div  class="index_slyde1">
-        <figure>
+      <div class="index_slyde1_container">
+        <div class="index_slyde1">
           <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
-          <picture>
-            <img src="img/png/01.png"
-              width="166px"
-              height="131px"
-              alt="01">
-          </picture>
-          <picture>
+          <div class="index_slyde1_photo">
             <img src="img/png/slider_1.png"
              width="384px"
              height="486px"
              alt="Самая длинная палка для селфи">
-          </picture>
-          <figcaption>
-            <h4>Делай селфи, как Бен Стиллер!</h4>
-            <p>Самая длинная палка для селфи доступна в нашем магазине.
-              Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <a href="#" aria-label="Подробнее">Подробнее</a>
-            <table aria-describedby="Параметры палки для селфи">
-              <tr class="table_value">
-                <td>8,5</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-              <tr class="table_property">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-            </table>
-          </figcaption>
-        </figure>
+          </div>
+          <div class="slyde1_description_container">
+            <div class="slyde1_description_upper">
+              <div class="slyde1_description_number">
+               01
+              </div>
+              <div class="slyde1_description_name">
+                <h4>Делай селфи,<br>как Бен Стиллер!</h4>
+              </div>
+            </div>
+            <div class="slyde1_description-info">
+              <p>Самая длинная палка для селфи доступна в нашем магазине.
+                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+              <div class="slyde1_description_link">
+                <a href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="slyde1_description_table">
+                <table aria-describedby="Параметры палки для селфи">
+                  <tr class="slyde_table table_value">
+                    <td>8,5</td>
+                    <td>5 кг</td>
+                    <td>Карбон</td>
+                  </tr>
+                  <tr class="slyde_table table_property">
+                    <td>Длина палки</td>
+                    <td>Вес палки</td>
+                    <td>Материал</td>
+                  </tr>
+                </table>
+              </div>
+            </div> 
+          </div>
+        </div>
       </div>
       <!--2 слайд-->
-      <div  class="index_slyde2">
-        <figure>
+      <div class="index_slyde2_container visually_hidden">
+        <div class="index_slyde2">
           <h3 class="visually_hidden">Фитнес-браслет</h3>
-          <picture>
-            <img src="img/png/02.png"
-             width="198px"
-             height="131px"
-             alt="02">
-          </picture>
-          <picture>
+          <div class="index_slyde2_photo">
             <img src="img/png/slider_2.png"
              width="345px"
              height="485px"
              alt="Фитнес-браслет">
-          </picture>
-          <figcaption>
-            <h4>Худеем правильно!</h4>
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-               не пропускать занятия и соблюдать диету.</p>
-            <a href="#" aria-label="Подробнее">Подробнее</a>
-            <table>
-              <tr class="table_value">
-                <td>48 часов</td>
-              </tr>
-              <tr class="table_property">
-                <td>Без подзарядки</td>
-              </tr>
-            </table>
-          </figcaption>
-        </figure>
+          </div>
+          <div class="slyde2_description_container">
+            <div class="slyde2_description_upper">
+              <div class="slyde2_description_number">
+                02
+              </div>
+              <div class="slyde2_description_name">
+                <h4>Худеем<br>правильно!</h4>
+              </div>
+            </div>
+            <div class="slyde2_description-info">
+              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                 не пропускать занятия и соблюдать диету.</p>
+              <div class="slyde1_description_link">
+                <a href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="slyde2_description_table">
+                <table>
+                  <tr class="slyde_table table_value">
+                    <td>48 часов</td>
+                  </tr>
+                  <tr class="slyde_table table_property">
+                    <td>Без подзарядки</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <!--3 слайд-->
-      <div  class="index_slyde3">
-        <figure>
+      <div  class="index_slyde3_container visually_hidden">
+        <div class="index_slyde3">
           <h3 class="visually_hidden">Квадрокоптер</h3>
-          <picture>
-             <img src="img/png/03.png"
-             width="201px"
-             height="131px"
-             alt="03">
-          </picture>
-          <picture>
-          <img src="img/png/slider_3.png"
-           width="526px"
-           height="334px"
-           alt="Квадрокоптер">
-          </picture>
-          <figcaption>
-            <h4>Порхает как бабочка,
-                жалит как пчела!</h4>
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен
+          <div class="index_slyde3_photo">
+            <img src="img/png/slider_3.png"
+             width="526px"
+             height="334px"
+             alt="Квадрокоптер">
+          </div>
+          <div class="slyde3_description_container">
+            <div class="slyde3_description_upper">
+              <div class="slyde3_description_number">
+                03
+              </div>
+              <div class="slyde3_description_name">
+                <h4>Порхает как бабочка,
+                    жалит как пчела!</h4>
+              </div>
+            </div>
+            <div class="slyde3_description-info">
+              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.</p>
-            <a href="#" aria-label="Подробнее">Подробнее</a>
-            <table aria-describedby="Суперспособности квадрокоптера">
-              <tr class="table_value">
-                <td>800 м</td>
-                <td>50 м</td>
-              </tr>
-              <tr class="table_property">
-                <td>Дальность полета</td>
-                <td>Радиус поражения</td>
-              </tr>
-            </table>
-          </figcaption>
-        </figure>
+              <div class="slyde3_description_link">
+                <a href="#" aria-label="Подробнее">Подробнее</a>
+              </div>
+              <div class="slyde3_description_table">
+                <table aria-describedby="Суперспособности квадрокоптера">
+                  <tr class="slyde_table table_value">
+                    <td>800 м</td>
+                    <td>50 м</td>
+                  </tr>
+                  <tr class="slyde_table table_property">
+                    <td>Дальность полета</td>
+                    <td>Радиус поражения</td>
+                  </tr>
+                </table>
+              </div> 
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <!--Картинки-меню с ссылками-->
     <section>
       <h2 class="visually_hidden">Категории товаров</h2>
       <ul class="index_range">
-        <li>
+        <li class="index_range_icon_container">
           <a href="#" aria-label="Виртуальная реальность">
             <div class="index_range_icon">
               <img src="img/svg/popular_1.svg"
@@ -237,9 +260,9 @@
             <span class="index_range_category">Виртуальная реальность</span>
           </a>
         </li>
-        <li>
+        <li class="index_range_icon_container">
           <a href="catalog.html" aria-label="Моноподы для селфи">
-            <div class="index_range_icon">
+            <div class="index_range_icon index_range_icon_2">
               <img src="img/svg/popular_2.svg"
               width="86px"
               height="117px"
@@ -248,7 +271,7 @@
             <span class="index_range_category">Моноподы для селфи</span>
           </a>
         </li>
-        <li>
+        <li class="index_range_icon_container">
           <a href="#" aria-label="Экшн-камеры">
             <div class="index_range_icon">
               <img src="img/svg/popular_3.svg"
@@ -259,7 +282,7 @@
             <span class="index_range_category">Экшн-камеры</span>
           </a>
         </li>
-        <li>
+        <li class="index_range_icon_container">
           <a href="#" aria-label="Фитнес-браслеты">
             <div class="index_range_icon">
               <img src="img/svg/popular_4.svg"
@@ -270,7 +293,7 @@
             <span class="index_range_category">Фитнес-браслеты</span>
           </a>
         </li>
-        <li>
+        <li class="index_range_icon_container">
           <a href="#" aria-label="Умные часы">
             <div class="index_range_icon">
               <img src="img/svg/popular_5.svg"
@@ -281,13 +304,13 @@
             <span class="index_range_category">Умные часы</span>
           </a>
         </li>
-        <li>
+        <li class="index_range_icon_container">
           <a href="#" aria-label="Квадрокоптеры">
             <div class="index_range_icon">
               <img src="img/svg/popular_6.svg"
               width="132px"
               height="69px"
-              alt="Упрощённый вид вадрокоптера">
+              alt="Упрощённый вид квадрокоптера">
             </div>
             <span class="index_range_category">Квадрокоптеры</span>
           </a>
@@ -296,95 +319,117 @@
     </section>
     <!--Блок с сервисами-->
     <div class="index_servis">
-      <section>
-        <h2 class="visually_hidden">Сервисы</h2>
-        <ul class="index_servis_list">
-          <li>
-            <a href="#" aria-label="Доставка">Доставка</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Гарантия">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Кредит">Кредит</a>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <h2>Доставка</h2>
-        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-          Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        <img src="img/svg/delivery.svg"
-        width="136px"
-        height="164px"
-        alt="Фигурка курьера с посылкой">
-      </section>
+      <div class="index_servis_container">
+        <section>
+          <h2 class="visually_hidden">Сервисы</h2>
+          <ul class="index_servis_list">
+            <li>
+              <div class="index_servis_item_1">
+              <a href="#" aria-label="Доставка">Доставка</a>
+              </div>
+            </li>
+            <li>
+              <div class="index_servis_item">
+                <a href="#" aria-label="Гарантия">Гарантия</a>
+              </div>
+            </li>
+            <li>
+              <div class="index_servis_item">
+                <a href="#" aria-label="Кредит">Кредит</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="servis_delivery_container">
+            <div class="delivery">
+              <h2>Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </div>
+            <img src="img/svg/delivery.svg"
+            width="136px"
+            height="164px"
+            alt="Фигурка курьера с посылкой">
+          </div>
+        </section>
+      </div>
       <!--Блок гарантии-->
-      <section>
-        <h2>Гарантия</h2>
-        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-        <img src="img/svg/garant.svg"
-         width="171px"
-         height="194px"
-         alt="Телефонная трубка с голосом техподдержки">
+      <section class="visually_hidden">
+        <div class="servis_warrant_container">
+          <div class="warrant">
+            <h2>Гарантия</h2>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                Товар, не дом, конечно же.</p>
+          </div>
+          <img src="img/svg/garant.svg"
+           width="171px"
+           height="194px"
+           alt="Телефонная трубка с голосом техподдержки">
+          </div>
       </section>
       <!--Блок кредита-->
-      <section>
-        <h2>Кредит</h2>
-        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-            условия кредита. Выгодные для нашего банка, разумеется.</p>
-        <img src="img/svg/credit.svg"
-         width="156px"
-         height="186px"
-        alt="Фигурка человека с кредитной картой">
+      <section class="visually_hidden">
+        <div class="servis_credit_container">
+          <div class="credit">
+            <h2>Кредит</h2>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для нашего банка, разумеется.</p>
+          </div>
+          <img src="img/svg/credit.svg"
+           width="156px"
+           height="186px"
+          alt="Фигурка человека с кредитной картой">
+        </div>
       </section>
     </div>
     <!--Блок с логотипами-->
     <section>
     <h2  class="visually_hidden">Логотипы партнёров</h2>
-    <ul class="logo_partner">
-      <li class="logo_partner_dj">
-        <a href="#"  aria-label="Сайт партнера №1">
-          <img src="img/png/logo_1.png"
-          width="260px"
-          height="100px"
-          alt="Логотип партнера №1">
-        </a>
-      </li>
-      <li class="logo_partner_spgadgets">
-        <a href="#"  aria-label="Сайт партнера №2">
-          <img src="img/png/logo_2.png"
-          width="260px"
-          height="100px"
-          alt="Логотип партнера №2">
-        </a>
-      </li>
-      <li class="logo_partner_gopro">
-        <a href="#"  aria-label="Сайт партнера №3">
-          <img src="img/png/logo_3.png"
-          width="260px"
-          height="100px"
-          alt="Логотип партнера №3">
-        </a>
-      </li>
-      <li class="logo_partner_vive">
-        <a href="#" aria-label="Сайт партнера №4">
-          <img src="img/png/logo_4.png"
-          width="260px"
-          height="100px"
-          alt="Логотип партнера №4">
-        </a>
-      </li>
-    </ul>
+      <ul class="logo_partner">
+        <li class="logo_partner_dj">
+          <a href="#"  aria-label="Сайт партнера №1">
+            <img src="img/png/logo_1.png"
+            width="260px"
+            height="100px"
+            alt="Логотип партнера №1">
+          </a>
+        </li>
+        <li class="logo_partner_spgadgets">
+          <a href="#"  aria-label="Сайт партнера №2">
+            <img src="img/png/logo_2.png"
+            width="260px"
+            height="100px"
+            alt="Логотип партнера №2">
+          </a>
+        </li>
+        <li class="logo_partner_gopro">
+          <a href="#"  aria-label="Сайт партнера №3">
+            <img src="img/png/logo_3.png"
+            width="260px"
+            height="100px"
+            alt="Логотип партнера №3">
+          </a>
+        </li>
+        <li class="logo_partner_vive">
+          <a href="#" aria-label="Сайт партнера №4">
+            <img src="img/png/logo_4.png"
+            width="260px"
+            height="100px"
+            alt="Логотип партнера №4">
+          </a>
+        </li>
+      </ul>
     </section>
     <div class="info_device">
       <div class="excerpt_container">
         <section class="excerpt_about_us">
-          <img src="img/png/line_info_device.png"
-          width="80px"
-          height="7px"
-          alt="Декоративный разделитель">
+          <div class="excerpt_about_us_img">
+            <img src="img/png/line_info_device.png"
+            width="80px"
+            height="7px"
+            alt="Декоративный разделитель">
+         </div>
           <h2>О нас</h2>
           <div class="excerpt_content_container">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -413,9 +458,9 @@
               </li>
             </ul>
           </div>
-          <p>
+          <div class="info_device_link">
             <a href="#" aria-label="Подробнее о нас">Подробнее о нас</a>
-          </p>
+          </div>
         </section>
       </div>
       <div class="excerpt_container">
@@ -425,7 +470,7 @@
           height="7px"
           alt="Декоративный разделитель">
           <h2>Контакты</h2>
-          <div class="excerpt_content_container">
+          <div class="excerpt_location_container">
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
             <a href="#" aria-label="Большая карта с расположением офиса по адресу: Москва, улица Строителей, дом 15">
               <img src="img/png/map.png"
@@ -449,9 +494,9 @@
             </button>
           </div>
           <!--конец карты-->
-          <p>
+          <div class="info_device_link">
             <a href="#" aria-label="Напишите нам">Напишите нам</a>
-          </p>
+          </div>
         </section>
       </div>
     </div>

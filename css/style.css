@@ -973,8 +973,8 @@ margin: 0 auto;
 .slyde1_description_number,
 .slyde2_description_number,
 .slyde3_description_number {
+  margin-top: 50px;
   width: 500px;
-  height: 131px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -993,13 +993,11 @@ margin: 0 auto;
 .slyde2_description_name h4,
 .slyde3_description_name h4 {
   margin: 0;
-  margin-top: -55px;
 }
 .slyde1_description-info,
 .slyde2_description-info,
 .slyde3_description-info {
   width: 500px;
-  height: 215px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -1017,7 +1015,6 @@ margin: 0 auto;
 .slyde2_description_table,
 .slyde3_description_table {
   width: 500px;
-  height: 75px;
   align-self: flex-end;
 }
 .slyde_table td {

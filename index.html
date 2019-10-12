@@ -37,29 +37,17 @@
         </form>
         <ul class="user_navigation_header">
           <li>
-            <a href="#" aria-label="Авторизация">
-              <img src="img/svg/user.svg"
-              width="13px"
-              height="12px"
-              alt="Авторизация">
+            <a class="login_link" href="#" aria-label="Авторизация">
               Войти
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Сравнение товаров">
-              <img src="img/svg/compare.svg"
-              width="10px"
-              height="10px"
-              alt="Сравнение товаров">
+            <a class="compare_link" href="#" aria-label="Сравнение товаров">
               Сравнить
             </a>
           </li>
           <li>
-            <a href="#" aria-label="Корзина">
-              <img src="img/svg/cart.svg"
-              width="12px"
-              height="12px"
-              alt="Корзина">
+            <a class="cart_link" href="#" aria-label="Корзина">
               Корзина
             </a>
           </li>
@@ -67,19 +55,19 @@
         <nav aria-label="Основные разделы">
           <ul class="main_navigation_header">
             <li>
-              <a class="plus" href="#" aria-haspopup="true">
-                  Каталог товаров
-                <img src="img/png/plus.png"
-                width="16px"
-                height="16px"
-                alt="Каталог товаров">
+              <a class="dropdown_plus" href="#" aria-label="Каталог товаров">
+              Каталог товаров
+              <img src="img/png/plus.png"
+              width="16px"
+              height="16px"
+              alt="Плюс">
               </a>
             </li>
             <li>
               <a href="#" aria-label="Доставка">Доставка</a>
             </li>
             <li>
-              <a href="#" aria-label="Гарантии">Гарантия</a>
+              <a href="#" aria-label="Гарантия">Гарантия</a>
             </li>
             <li>
               <a href="#" aria-label="Контакты">Контакты</a>
@@ -121,7 +109,7 @@
     <section>
       <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
       <!--1 слайд-->
-      <div class="index_slyde1_container">
+      <div class="index_slyde1_container visually_hidden">
         <div class="index_slyde1">
           <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
           <div class="index_slyde1_photo">
@@ -133,7 +121,8 @@
           <div class="slyde1_description_container">
             <div class="slyde1_description_upper">
               <div class="slyde1_description_number">
-               01
+                <div class="decorativ_line_100_7"></div>
+                <span>01</span>
               </div>
               <div class="slyde1_description_name">
                 <h4>Делай селфи,<br>как Бен Стиллер!</h4>
@@ -143,6 +132,7 @@
               <p>Самая длинная палка для селфи доступна в нашем магазине.
                   Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
               <div class="slyde1_description_link">
+                <div class="decorativ_line_220_8"></div>
                 <a href="#" aria-label="Подробнее">Подробнее</a>
               </div>
               <div class="slyde1_description_table">
@@ -159,7 +149,7 @@
                   </tr>
                 </table>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -176,7 +166,8 @@
           <div class="slyde2_description_container">
             <div class="slyde2_description_upper">
               <div class="slyde2_description_number">
-                02
+                <div class="decorativ_line_100_7"></div>
+                <span>02</span>
               </div>
               <div class="slyde2_description_name">
                 <h4>Худеем<br>правильно!</h4>
@@ -185,7 +176,8 @@
             <div class="slyde2_description-info">
               <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
                  не пропускать занятия и соблюдать диету.</p>
-              <div class="slyde1_description_link">
+              <div class="slyde2_description_link">
+                <div class="decorativ_line_220_8"></div>
                 <a href="#" aria-label="Подробнее">Подробнее</a>
               </div>
               <div class="slyde2_description_table">
@@ -203,7 +195,7 @@
         </div>
       </div>
       <!--3 слайд-->
-      <div  class="index_slyde3_container visually_hidden">
+      <div  class="index_slyde3_container">
         <div class="index_slyde3">
           <h3 class="visually_hidden">Квадрокоптер</h3>
           <div class="index_slyde3_photo">
@@ -215,7 +207,8 @@
           <div class="slyde3_description_container">
             <div class="slyde3_description_upper">
               <div class="slyde3_description_number">
-                03
+                <div class="decorativ_line_100_7"></div>
+                <span>03</span>
               </div>
               <div class="slyde3_description_name">
                 <h4>Порхает как бабочка,
@@ -226,6 +219,7 @@
               <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
                 мощным лазером, замаскированным под стандартную камеру.</p>
               <div class="slyde3_description_link">
+                <div class="decorativ_line_220_8"></div>
                 <a href="#" aria-label="Подробнее">Подробнее</a>
               </div>
               <div class="slyde3_description_table">
@@ -239,7 +233,7 @@
                     <td>Радиус поражения</td>
                   </tr>
                 </table>
-              </div> 
+              </div>
             </div>
           </div>
         </div>
@@ -250,7 +244,7 @@
       <h2 class="visually_hidden">Категории товаров</h2>
       <ul class="index_range">
         <li class="index_range_icon_container">
-          <a href="#" aria-label="Виртуальная реальность">
+          <a class="virtual_reality" href="#" aria-label="Виртуальная реальность">
             <div class="index_range_icon">
               <img src="img/svg/popular_1.svg"
               width="97px"
@@ -268,7 +262,7 @@
               height="117px"
               alt="Схематичный монопод для селфи">
             </div>
-            <span class="index_range_category">Моноподы для селфи</span>
+            <span class="index_range_category">Моноподы<br>для селфи</span>
           </a>
         </li>
         <li class="index_range_icon_container">
@@ -324,64 +318,62 @@
           <h2 class="visually_hidden">Сервисы</h2>
           <ul class="index_servis_list">
             <li>
-              <div class="index_servis_item_1">
-              <a href="#" aria-label="Доставка">Доставка</a>
+              <div class="index_servis_item index_servis_item_1">
+              <div class="index_servis_list_link">
+                <a href="#" aria-label="Доставка">Доставка</a>
+              </div>
               </div>
             </li>
             <li>
-              <div class="index_servis_item">
+              <div class="index_servis_item index_servis_item_2">
+                <div class="index_servis_list_link">
                 <a href="#" aria-label="Гарантия">Гарантия</a>
+                </div>
               </div>
             </li>
             <li>
-              <div class="index_servis_item">
+              <div class="index_servis_item index_servis_item_3">
                 <a href="#" aria-label="Кредит">Кредит</a>
               </div>
             </li>
           </ul>
         </section>
         <section>
-          <div class="servis_delivery_container">
-            <div class="delivery">
-              <h2>Доставка</h2>
-              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+          <div class="servis_delivery_container visually_hidden">
+            <div class="servis_delivery">
+              <div class="delivery">
+                <h2>Доставка</h2>
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+              </div>
             </div>
-            <img src="img/svg/delivery.svg"
-            width="136px"
-            height="164px"
-            alt="Фигурка курьера с посылкой">
+          </div>
+        </section>
+        <!--Блок гарантии-->
+        <section class="">
+          <div class="servis_warrant_container visually_hidden">
+            <div class="servis_warrant">
+              <div class="warrant">
+                <h2>Гарантия</h2>
+                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
+                    Товар, не дом, конечно же.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Блок кредита-->
+        <section class="">
+          <div class="servis_credit_container">
+            <div class="servis_credit">
+              <div class="credit">
+                <h2>Кредит</h2>
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                    условия кредита. Выгодные для нашего банка, разумеется.</p>
+              </div>
+            </div>
           </div>
         </section>
       </div>
-      <!--Блок гарантии-->
-      <section class="visually_hidden">
-        <div class="servis_warrant_container">
-          <div class="warrant">
-            <h2>Гарантия</h2>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
-                Товар, не дом, конечно же.</p>
-          </div>
-          <img src="img/svg/garant.svg"
-           width="171px"
-           height="194px"
-           alt="Телефонная трубка с голосом техподдержки">
-          </div>
-      </section>
-      <!--Блок кредита-->
-      <section class="visually_hidden">
-        <div class="servis_credit_container">
-          <div class="credit">
-            <h2>Кредит</h2>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </div>
-          <img src="img/svg/credit.svg"
-           width="156px"
-           height="186px"
-          alt="Фигурка человека с кредитной картой">
-        </div>
-      </section>
     </div>
     <!--Блок с логотипами-->
     <section>
@@ -424,12 +416,8 @@
     <div class="info_device">
       <div class="excerpt_container">
         <section class="excerpt_about_us">
-          <div class="excerpt_about_us_img">
-            <img src="img/png/line_info_device.png"
-            width="80px"
-            height="7px"
-            alt="Декоративный разделитель">
-         </div>
+          <div class="decorativ_line_80_8">
+          </div>
           <h2>О нас</h2>
           <div class="excerpt_content_container">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -459,16 +447,15 @@
             </ul>
           </div>
           <div class="info_device_link">
+            <div class="decorativ_line_260_8"></div>
             <a href="#" aria-label="Подробнее о нас">Подробнее о нас</a>
           </div>
         </section>
       </div>
       <div class="excerpt_container">
         <section class="excerpt_location">
-          <img src="img/png/line_info_device.png"
-          width="80px"
-          height="7px"
-          alt="Декоративный разделитель">
+          <div class="decorativ_line_80_8">
+          </div>
           <h2>Контакты</h2>
           <div class="excerpt_location_container">
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -479,145 +466,205 @@
               alt="Схема расположения офиса в Москве по адресу улица Строителей, дом 15">
             </a>
           </div>
-          <!--попап с картой-->
-          <div class="visually_hidden">
-            <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
-              <img src="img/png/map_big.png"
-              width="994px"
-              height="593px"
-              alt="Большая карта с расположением офиса по адресу: Москва, улица Строителей, дом 15">
-            </a>
-            <button type="button" alt="Закрыть">
-              <img src="img/svg/modal_close.svg"
-              width="55px"
-              height="55px">
-            </button>
-          </div>
-          <!--конец карты-->
           <div class="info_device_link">
+            <div class="decorativ_line_260_8"></div>
             <a href="#" aria-label="Напишите нам">Напишите нам</a>
           </div>
         </section>
       </div>
     </div>
     <!--напишите нам-->
-    <div class="visually_hidden">
-      <form method="POST" action="#">
-        <label class="visually_hidden" for="input_name">Ваше имя:</label>
-        <input type="text"
-        id="input_name"
-        name="name"
-        value="name"
-        placeholder="Имя Фамилия">
-        <label class="visually_hidden" for="input_e_mail">Ваш e-mail:</label>
-        <input type="text"
-         id="input_e_mail"
-         name="e-mail"
-         value="e-mail"
-         placeholder="e-mail@example.com">
-        <label class="visually-hidden" for="textarea_for_letter">Текст письма:</label>
-        <textarea rows="4"
-         id="textarea_for_letter"
-         name="letter"
-         value="letter"
-         placeholder="В свободной форме">
-         </textarea>
-        <p>
-          <button type="submit">Отправить</button>
+    <div class="write_us_container">
+      <form class="write_us" method="POST" action="#">
+        <p class="write_us_item">
+          <label class="" for="input_name">Ваше имя:</label>
+          <input type="text"
+          id="input_name"
+          name="name"
+          value="Имя Фамилия"
+          placeholder="Имя Фамилия">
         </p>
+        <p class="write_us_item">
+          <label class="" for="input_e_mail">Ваш e-mail:</label>
+          <input type="text"
+           id="input_e_mail"
+           name="e-mail"
+           value="e-mail@example.com"
+           placeholder="e-mail@example.com">
+        </p>
+        <p class="write_us_textarea">
+          <label for="textarea_for_letter">Текст письма:</label>
+          <textarea rows="4"
+           id="textarea_for_letter"
+           name="letter"
+           value="letter"
+           placeholder="В свободной форме">
+           </textarea>
+        </p>
+        <div class="write_us_button">
+          <div class="decorativ_line_200_8"></div>
+          <button class="button" type="submit">Отправить</button>
+        </div>
       </form>
-      <button type="button" aria-label="Закрыть">
-        <img src="img/svg/modal_close.svg"
+      <div class="wtite_us_icon_close_container">
+        <button class="wtite_us_icon_close" type="button" aria-label="Закрыть">
+          <img src="img/png/modal_close.png"
+          width="55px"
+          height="55px"
+          alt="Закрыть">
+        </button>
+      </div>
+    </div>
+    <!--конец напишите нам-->
+    <!--попап с картой-->
+    <div class="map_big">
+      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+      </a>
+      <button class="map_big_icon_close" type="button" aria-label="Закрыть">
+        <img src="img/png/modal_close.png"
         width="55px"
         height="55px"
         alt="Закрыть">
       </button>
     </div>
-    <!--конец напишите нам-->
+    <!--конец попапа с картой-->
   </main>
   <footer>
     <div class="footer_index">
       <div class="footer_index_container">
-        <div class="logo_device_footer">
-          <img src="img/png/logo_device.png"
-          width="163px"
-          height="35px"
-          alt="логотип магазина DEVICE">
-        </div>
-        <ul class="user_navigation_footer">
-          <li>
-            <a href="№" aria-label="Авторизация">
-              <img src="img/png/user.png"
-              width="13px"
-              height="12px"
-              alt="Авторизация">
-              Войти
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Сравнить">
-              <img src="img/png/compare.png"
-              width="10px"
-              height="10px"
-              alt="Сравнение товаров">
-              Сравнить
-            </a>
-          </li>
-          <li>
-            <a href="#" aria-label="Корзина">
-              <img src="img/png/cart.png"
-              width="12px"
-              height="12px"
-              alt="Корзина">
-              Корзина
-            </a>
-          </li>
-        </ul>
-        <p> Москва, ул. Строителей, 15</p>
-        <ul class="servis_navigation_footer">
-          <li>
-            <a href="#" aria-label="Доставка">Доставка</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Гарантия">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Контакты">Контакты</a>
-          </li>
-        </ul>
-        <p> Тел.: +7 (495) 495-95-95</p>
-        <img class="line_footer" src="img/png/line_footer.png"
-            width="80px"
-            height="7px"
-            alt="Декоративная черта">
-        <div class="social">
-          <a href="#" aria-label="Магазин DEVICE в Фейсбуке">
-            <img src="img/svg/facebook.svg"
-            width="32px"
-            height="32px"
-            alt="Логотип Фейсбука">
-          </a>
-          <a href="#" aria-label="Магазин DEVICE в Инстаграме">
-            <img src="img/svg/instagram.svg"
-            width="32px"
-            height="32px"
-            alt="Логотип Инстаграма">
-          </a>
-          <a href="#" aria-label="Магазин DEVICE в Твиттере">
-            <img src="img/svg/twitter.svg"
-            width="32px"
-            height="32px"
-            alt="Логотип Твиттера">
-          </a>
-        </div>
-        <div class="logo_html">
-          <a href="https://htmlacademy.ru/intensive/htmlcss"
-           aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1» в HTML Academia">
-            <img src="img/png/logo_html.png"
-            width="27px"
+        <div class="navigation_footer_container">
+          <div class="logo_device_footer">
+            <img src="img/png/logo_device.png"
+            width="163px"
             height="35px"
-            alt="Логотип HTML Academia">
-          </a>
+            alt="логотип магазина DEVICE">
+          </div>
+          <ul class="user_navigation_footer">
+            <li>
+              <a href="#" aria-label="Авторизация">
+                <img src="img/png/user.png"
+                width="13px"
+                height="12px"
+                alt="Авторизация">
+                Войти
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Сравнить">
+                <img src="img/png/compare.png"
+                width="10px"
+                height="10px"
+                alt="Сравнение товаров">
+                Сравнить
+              </a>
+            </li>
+            <li>
+              <a href="#" aria-label="Корзина">
+                <img src="img/png/cart.png"
+                width="12px"
+                height="12px"
+                alt="Корзина">
+                Корзина
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_index_info">
+          <p> Москва, ул. Строителей, 15</p>
+          <ul class="servis_navigation_footer">
+            <li>
+              <a href="#" aria-label="Доставка">Доставка</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Гарантия">Гарантия</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Контакты">Контакты</a>
+            </li>
+          </ul>
+          <p> Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer_other_sites">
+          <div class="decorativ_line_80_7">
+          </div>
+          <div class="social">
+            <a href="#">
+              <span class="visually_hidden">Магазин DEVICE в Фейсбуке</span>
+              <svg version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="32px"
+              height="32px"
+              viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32"
+              xml:space="preserve">
+                <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.163,0,16s7.164,16,16,16c8.837,0,16-7.164,16-16S24.837,0,16,0z M20.062,9.455h-3.021
+                	v3.444h3.021v3.445h-3.021v8.61h-3.021v-8.61H11v-3.445h3.021V9.455c0-1.902,1.353-3.445,3.021-3.445h3.021V9.455z"/>
+              </svg>
+            </a>
+            <a href="#">
+              <span class="visually_hidden">Магазин DEVICE в Инстаграме</span>
+              <svg version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+               width="32px"
+               height="32px"
+               viewBox="0 0 32 32"
+               enable-background="new 0 0 32 32"
+               xml:space="preserve">
+                 <g>
+	                 <path fill="#FFFFFF" d="M20.916,16c0,2.728-2.211,4.938-4.938,4.938S11.039,18.728,11.039,16c0-0.394,0.051-0.773,0.138-1.14
+                   	h-0.897v6.838h11.396V14.86h-0.897C20.865,15.227,20.916,15.606,20.916,16z"/>
+                   <path fill="#FFFFFF" d="M15.978,18.659c1.466,0,2.659-1.193,2.659-2.659s-1.193-2.659-2.659-2.659
+                   	c-1.466,0-2.659,1.193-2.659,2.659S14.511,18.659,15.978,18.659z"/>
+                   <rect x="18.637" y="10.302" fill="#FFFFFF" width="3.039" height="3.039"/>
+                   <path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+                   	 M23.955,21.698c0,1.254-1.025,2.279-2.279,2.279H10.279C9.026,23.978,8,22.952,8,21.698V10.302c0-1.253,1.026-2.279,2.279-2.279
+                   	h11.396c1.254,0,2.279,1.026,2.279,2.279V21.698z"/>
+                </g>
+              </svg>
+            </a>
+            <a href="#">
+              <span class="visually_hidden">Магазин DEVICE в Твиттере</span>
+              <svg version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="32px"
+              height="32px"
+              viewBox="0 0 32 32"
+              enable-background="new 0 0 32 32"
+              xml:space="preserve">
+                <g id="Layer_1">
+                </g>
+                <g id="Layer_2">
+                	<path fill="#FFFFFF" d="M16,0C7.164,0,0,7.164,0,16c0,8.837,7.164,16,16,16c8.837,0,16-7.163,16-16C32,7.164,24.837,0,16,0z
+                		 M23.944,12.809c-0.251,6.516-3.463,10.832-10.992,10.702c-0.14,0-0.205,0-0.233,0c-0.015,0-0.021,0-0.021,0
+                		c-0.029,0-0.094,0-0.232,0c-0.447,0-4.543-0.443-5.344-1.823c2.479,0.19,4.247-0.406,5.12-1.136
+                		c-1.048-0.289-2.923-0.461-3.251-2.848c0.384,0.104,0.618,0.221,1.299,0.113c-1.307-0.824-2.758-1.519-2.679-3.643
+                		c0.311,0.317,1.164,0.518,1.46,0.457c-0.768-0.233-2.149-3.244-0.974-4.781c1.984,1.79,4.075,3.482,7.804,3.643
+                		c0.227-2.214,1.24-3.699,3.168-4.325c1.84-0.479,3.255,0.26,3.901,1.138c0.737-0.224,1.453-0.466,2.193-0.685
+                		c-0.004,0.833-0.569,1.463-0.935,1.709c0.747,0.165,1.423-0.475,1.423-0.475C25.467,11.818,24.557,12.58,23.944,12.809z"/>
+                </g>
+              </svg>
+            </a>
+            </div>
+          <div class="logo_html">
+            <a href="https://htmlacademy.ru/intensive/htmlcss"
+             aria-label="Лендинг интенсива «Профессиональный HTML и CSS, уровень 1» в HTML Academia">
+              <img src="img/png/logo_html.png"
+              width="27px"
+              height="35px"
+              alt="Логотип HTML Academia">
+            </a>
+          </div>
         </div>
       </div>
     </div>

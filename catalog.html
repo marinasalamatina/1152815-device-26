@@ -22,15 +22,9 @@
       <div class="header_catalog">
         <!--Форма поиска-->
         <form class="search_form" action="#" method="get">
-          <button class="search_form_button" type="submit" alt="Поиск">
-            <img src="img/svg/search.svg"
-            width="16px"
-            height="16px"
-            alt="Поиск">
-          </button>
-          <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-          <div class="visually_hidden">
-            <button class="seach_button" type="submit" alt="Поиск">
+          <div class="search_container">
+            <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <button class="search_button" type="submit" alt="Поиск">
               Поиск
             </button>
           </div>
@@ -175,11 +169,11 @@
         <div class="catalog_center_down">
           <aside class="catalog_items_filter">
             <div class="catalog_items_filter_container">
-              <div>
+              <div class="filter_item">
                 <h3>Стоимость</h3>
                 <input type="range" aria-label="Диапазон цен" min="0" max="8000" step="1000" value="5000">
               </div>
-              <div>
+              <div class="filter_item">
                 <h3>Цвет</h3>
                 <input type="checkbox" id="black" name="color1" value="Черный"checked>
                 <label for="black">Черный</label><br>
@@ -192,7 +186,7 @@
                 <input type="checkbox" id="pink" name="color5" value="Розовый">
                 <label for="pink">Розовый</label><br>
               </div>
-              <div>
+              <div class="filter_item">
                 <h3>Bluetooth</h3>
                 <input type="radio" id="bluetooth_yes" name="bluetooth" value="bluetooth_yes" checked>
                 <label for="bluetooth_yes">Есть</label><br>

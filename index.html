@@ -22,15 +22,9 @@
       <div class="header_index">
         <!--Форма поиска-->
         <form class="search_form" action="#" method="get">
-          <button class="search_form_button" type="submit" alt="Поиск">
-            <img src="img/svg/search.svg"
-            width="16px"
-            height="16px"
-            alt="Поиск">
-          </button>
-          <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
-          <div class="visually_hidden">
-            <button class="seach_button" type="submit" alt="Поиск">
+          <div class="search_container">
+            <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
+            <button class="search_button" type="submit" alt="Поиск">
               Поиск
             </button>
           </div>
@@ -481,24 +475,22 @@
           <input type="text"
           id="input_name"
           name="name"
-          value="Имя Фамилия"
-          placeholder="Имя Фамилия">
+          value="Имя Фамилия">
         </p>
         <p class="write_us_item">
           <label class="" for="input_e_mail">Ваш e-mail:</label>
-          <input type="text"
+          <input type="e-mail"
            id="input_e_mail"
            name="e-mail"
-           value="e-mail@example.com"
-           placeholder="e-mail@example.com">
+           value="e-mail@example.com">
         </p>
         <p class="write_us_textarea">
           <label for="textarea_for_letter">Текст письма:</label>
           <textarea rows="4"
            id="textarea_for_letter"
            name="letter"
-           value="letter"
-           placeholder="В свободной форме">
+           value="letter">
+           В свободной форме
            </textarea>
         </p>
         <div class="write_us_button">
@@ -517,8 +509,11 @@
     </div>
     <!--конец напишите нам-->
     <!--попап с картой-->
-    <div class="map_big">
-      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+    <div class="map_big_container">
+      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" 
+        aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+        <div class="map_big">
+        </div>
       </a>
       <button class="map_big_icon_close" type="button" aria-label="Закрыть">
         <img src="img/png/modal_close.png"

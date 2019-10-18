@@ -48,13 +48,11 @@
         </ul>
         <nav aria-label="Основные разделы">
           <ul class="main_navigation_header">
-            <li>
-              <a class="dropdown_plus" href="#" aria-label="Каталог товаров">
+            <li class="dropdown_plus">
+              <a class="dropdown_plus_link"
+              href="#"
+              aria-label="Каталог товаров">
               Каталог товаров
-              <img src="img/png/plus.png"
-              width="16px"
-              height="16px"
-              alt="Плюс">
               </a>
             </li>
             <li>
@@ -70,31 +68,33 @@
         </nav>
       </div>
       <!--выпадающее меню-->
-      <div class="dropdown visually_hidden">
-        <ul>
-          <li>
-            <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
-          </li>
-          <li>
-            <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
-          </li>
-          <li>
-            <a href="#" aria-label="Умные часы">Умные часы</a>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
-          </li>
-        </ul>
+      <div class="dropdown_container visually_hidden">
+        <div class="dropdown">
+          <ul>
+            <li>
+              <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
+            </li>
+            <li>
+              <a href="catalog.html" aria-label="Моноподы для селфи">Моноподы для селфи</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Экшн-камеры">Экшн-камеры</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" aria-label="Фитнес-браслеты">Фитнес-браслеты</a>
+            </li>
+            <li>
+              <a href="#" aria-label="Умные часы">Умные часы</a>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="#" aria-label="Квадрокоптеры">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
@@ -103,131 +103,123 @@
     <section>
       <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
       <!--1 слайд-->
-      <div class="index_slyde1_container visually_hidden">
-        <div class="index_slyde1">
-          <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
-          <div class="index_slyde1_photo">
-            <img src="img/png/slider_1.png"
-             width="384px"
-             height="486px"
-             alt="Самая длинная палка для селфи">
-          </div>
-          <div class="slyde1_description_container">
-            <div class="slyde1_description_upper">
-              <div class="slyde1_description_number">
-                <div class="decorativ_line_100_7"></div>
-                <span>01</span>
-              </div>
-              <div class="slyde1_description_name">
-                <h4>Делай селфи,<br>как Бен Стиллер!</h4>
-              </div>
+      <div class="index_slyde1">
+        <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
+        <div class="index_slyde1_photo">
+          <img src="img/png/slider_1.png"
+           width="384px"
+           height="486px"
+           alt="Самая длинная палка для селфи">
+        </div>
+        <div class="slyde1_description_container">
+          <div class="slyde1_description_upper">
+            <div class="slyde1_description_number">
+              <span>01</span>
             </div>
-            <div class="slyde1_description-info">
-              <p>Самая длинная палка для селфи доступна в нашем магазине.
-                  Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-              <div class="slyde1_description_link">
-                <div class="decorativ_line_220_8"></div>
-                <a href="#" aria-label="Подробнее">Подробнее</a>
-              </div>
-              <div class="slyde1_description_table">
-                <table aria-describedby="Параметры палки для селфи">
-                  <tr class="slyde_table table_value">
-                    <td>8,5</td>
-                    <td>5 кг</td>
-                    <td>Карбон</td>
-                  </tr>
-                  <tr class="slyde_table table_property">
-                    <td>Длина палки</td>
-                    <td>Вес палки</td>
-                    <td>Материал</td>
-                  </tr>
-                </table>
-              </div>
+            <div class="slyde1_description_name">
+              <h4>Делай селфи,<br>как Бен Стиллер!</h4>
+            </div>
+          </div>
+          <div class="slyde1_description-info">
+            <p>Самая длинная палка для селфи доступна в нашем магазине.
+                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <div class="slyde_description_link">
+              <a href="#" aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="slyde_description_table">
+              <table aria-describedby="Параметры палки для селфи">
+                <tr class="slyde_table table_value">
+                  <td>8,5</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+                <tr class="slyde_table table_property">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
       </div>
       <!--2 слайд-->
-      <div class="index_slyde2_container visually_hidden">
-        <div class="index_slyde2">
-          <h3 class="visually_hidden">Фитнес-браслет</h3>
-          <div class="index_slyde2_photo">
-            <img src="img/png/slider_2.png"
-             width="345px"
-             height="485px"
-             alt="Фитнес-браслет">
-          </div>
-          <div class="slyde2_description_container">
-            <div class="slyde2_description_upper">
-              <div class="slyde2_description_number">
-                <div class="decorativ_line_100_7"></div>
-                <span>02</span>
-              </div>
-              <div class="slyde2_description_name">
-                <h4>Худеем<br>правильно!</h4>
-              </div>
+      <div class="index_slyde2 visually_hidden">
+        <h3 class="visually_hidden">Фитнес-браслет</h3>
+        <div class="index_slyde2_photo">
+          <img src="img/png/slider_2.png"
+           width="345px"
+           height="485px"
+           alt="Фитнес-браслет">
+        </div>
+        <div class="slyde2_description_container">
+          <div class="slyde2_description_upper">
+            <div class="slyde2_description_number">
+              <div class="decorativ_line_100_7"></div>
+              <span>02</span>
             </div>
-            <div class="slyde2_description-info">
-              <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-                 не пропускать занятия и соблюдать диету.</p>
-              <div class="slyde2_description_link">
-                <div class="decorativ_line_220_8"></div>
-                <a href="#" aria-label="Подробнее">Подробнее</a>
-              </div>
-              <div class="slyde2_description_table">
-                <table>
-                  <tr class="slyde_table table_value">
-                    <td>48 часов</td>
-                  </tr>
-                  <tr class="slyde_table table_property">
-                    <td>Без подзарядки</td>
-                  </tr>
-                </table>
-              </div>
+            <div class="slyde2_description_name">
+              <h4>Худеем<br>правильно!</h4>
+            </div>
+          </div>
+          <div class="slyde2_description-info">
+            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+               не пропускать занятия и соблюдать диету.</p>
+            <div class="slyde_description_link">
+              <div class="decorativ_line_220_8"></div>
+              <a href="#" aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="slyde_description_table">
+              <table>
+                <tr class="slyde_table table_value">
+                  <td>48 часов</td>
+                </tr>
+                <tr class="slyde_table table_property">
+                  <td>Без подзарядки</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
       </div>
       <!--3 слайд-->
-      <div  class="index_slyde3_container">
-        <div class="index_slyde3">
-          <h3 class="visually_hidden">Квадрокоптер</h3>
-          <div class="index_slyde3_photo">
-            <img src="img/png/slider_3.png"
-             width="526px"
-             height="334px"
-             alt="Квадрокоптер">
-          </div>
-          <div class="slyde3_description_container">
-            <div class="slyde3_description_upper">
-              <div class="slyde3_description_number">
-                <div class="decorativ_line_100_7"></div>
-                <span>03</span>
-              </div>
-              <div class="slyde3_description_name">
-                <h4>Порхает как бабочка,
-                    жалит как пчела!</h4>
-              </div>
+      <div class="index_slyde3 visually_hidden">
+        <h3 class="visually_hidden">Квадрокоптер</h3>
+        <div class="index_slyde3_photo">
+          <img src="img/png/slider_3.png"
+           width="526px"
+           height="334px"
+           alt="Квадрокоптер">
+        </div>
+        <div class="slyde3_description_container">
+          <div class="slyde3_description_upper">
+            <div class="slyde3_description_number">
+              <div class="decorativ_line_100_7"></div>
+              <span>03</span>
             </div>
-            <div class="slyde3_description-info">
-              <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                мощным лазером, замаскированным под стандартную камеру.</p>
-              <div class="slyde3_description_link">
-                <div class="decorativ_line_220_8"></div>
-                <a href="#" aria-label="Подробнее">Подробнее</a>
-              </div>
-              <div class="slyde3_description_table">
-                <table aria-describedby="Суперспособности квадрокоптера">
-                  <tr class="slyde_table table_value">
-                    <td>800 м</td>
-                    <td>50 м</td>
-                  </tr>
-                  <tr class="slyde_table table_property">
-                    <td>Дальность полета</td>
-                    <td>Радиус поражения</td>
-                  </tr>
-                </table>
-              </div>
+            <div class="slyde3_description_name">
+              <h4>Порхает как бабочка,
+                  жалит как пчела!</h4>
+            </div>
+          </div>
+          <div class="slyde3_description-info">
+            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+              мощным лазером, замаскированным под стандартную камеру.</p>
+            <div class="slyde_description_link">
+              <div class="decorativ_line_220_8"></div>
+              <a href="#" aria-label="Подробнее">Подробнее</a>
+            </div>
+            <div class="slyde_description_table">
+              <table aria-describedby="Суперспособности квадрокоптера">
+                <tr class="slyde_table table_value">
+                  <td>800 м</td>
+                  <td>50 м</td>
+                </tr>
+                <tr class="slyde_table table_property">
+                  <td>Дальность полета</td>
+                  <td>Радиус поражения</td>
+                </tr>
+              </table>
             </div>
           </div>
         </div>
@@ -241,6 +233,7 @@
           <a class="virtual_reality" href="#" aria-label="Виртуальная реальность">
             <div class="index_range_icon">
               <img src="img/svg/popular_1.svg"
+              class="index_range_icon_img"
               width="97px"
               height="55px"
               alt="Упрощенный вид очков для виртуальной реальности">
@@ -252,6 +245,7 @@
           <a href="catalog.html" aria-label="Моноподы для селфи">
             <div class="index_range_icon index_range_icon_2">
               <img src="img/svg/popular_2.svg"
+              class="index_range_icon_img"
               width="86px"
               height="117px"
               alt="Схематичный монопод для селфи">
@@ -263,6 +257,7 @@
           <a href="#" aria-label="Экшн-камеры">
             <div class="index_range_icon">
               <img src="img/svg/popular_3.svg"
+              class="index_range_icon_img"
               width="71px"
               height="87px"
               alt="Обобщенный вид экшн-камеры">
@@ -274,6 +269,7 @@
           <a href="#" aria-label="Фитнес-браслеты">
             <div class="index_range_icon">
               <img src="img/svg/popular_4.svg"
+              class="index_range_icon_img"
               width="107px"
               height="65px"
               alt="Упрощённый вид фитнес-браслета">
@@ -285,6 +281,7 @@
           <a href="#" aria-label="Умные часы">
             <div class="index_range_icon">
               <img src="img/svg/popular_5.svg"
+              class="index_range_icon_img"
               width="56px"
               height="98px"
               alt="Обобщённый вид умных часов">
@@ -296,6 +293,7 @@
           <a href="#" aria-label="Квадрокоптеры">
             <div class="index_range_icon">
               <img src="img/svg/popular_6.svg"
+              class="index_range_icon_img"
               width="132px"
               height="69px"
               alt="Упрощённый вид квадрокоптера">
@@ -311,21 +309,17 @@
         <section>
           <h2 class="visually_hidden">Сервисы</h2>
           <ul class="index_servis_list">
-            <li>
+            <li class="index_servis_item_container">
               <div class="index_servis_item index_servis_item_1">
-              <div class="index_servis_list_link">
                 <a href="#" aria-label="Доставка">Доставка</a>
               </div>
-              </div>
             </li>
-            <li>
+            <li class="index_servis_item_container">
               <div class="index_servis_item index_servis_item_2">
-                <div class="index_servis_list_link">
                 <a href="#" aria-label="Гарантия">Гарантия</a>
-                </div>
               </div>
             </li>
-            <li>
+            <li class="index_servis_item_container">
               <div class="index_servis_item index_servis_item_3">
                 <a href="#" aria-label="Кредит">Кредит</a>
               </div>
@@ -410,46 +404,23 @@
     <div class="info_device">
       <div class="excerpt_container">
         <section class="excerpt_about_us">
-          <div class="decorativ_line_80_8">
-          </div>
           <h2>О нас</h2>
           <div class="excerpt_content_container">
             <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
             <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
             <ul class="list_carriers">
-              <li>
-                <img src="img/png/ul_about_us.png"
-                width="8px"
-                height="8px"
-                alt="Пункт-списка">
-                Деловые линии
-              </li>
-              <li>
-                <img src="img/png/ul_about_us.png"
-                width="8px"
-                height="8px"
-                alt="Пункт-списка">
-                Автотрейдинг
-              </li>
-              <li>
-                <img src="img/png/ul_about_us.png"
-                width="8px"
-                height="8px"
-                alt="Пункт-списка">
-                ЖелДорЭкспедиция
-              </li>
+              <li class="item_carriers">Деловые линии</li>
+              <li class="item_carriers">Автотрейдинг</li>
+              <li class="item_carriers">ЖелДорЭкспедиция</li>
             </ul>
           </div>
           <div class="info_device_link">
-            <div class="decorativ_line_260_8"></div>
             <a href="#" aria-label="Подробнее о нас">Подробнее о нас</a>
           </div>
         </section>
       </div>
       <div class="excerpt_container">
         <section class="excerpt_location">
-          <div class="decorativ_line_80_8">
-          </div>
           <h2>Контакты</h2>
           <div class="excerpt_location_container">
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
@@ -461,7 +432,6 @@
             </a>
           </div>
           <div class="info_device_link">
-            <div class="decorativ_line_260_8"></div>
             <a href="#" aria-label="Напишите нам">Напишите нам</a>
           </div>
         </section>
@@ -494,7 +464,6 @@
            </textarea>
         </p>
         <div class="write_us_button">
-          <div class="decorativ_line_200_8"></div>
           <button class="button" type="submit">Отправить</button>
         </div>
       </form>
@@ -510,7 +479,7 @@
     <!--конец напишите нам-->
     <!--попап с картой-->
     <div class="map_big_container">
-      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7" 
+      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7"
         aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
         <div class="map_big">
         </div>
@@ -580,8 +549,6 @@
           <p> Тел.: +7 (495) 495-95-95</p>
         </div>
         <div class="footer_other_sites">
-          <div class="decorativ_line_80_7">
-          </div>
           <div class="social">
             <a href="#">
               <span class="visually_hidden">Магазин DEVICE в Фейсбуке</span>

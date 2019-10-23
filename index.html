@@ -68,7 +68,7 @@
         </nav>
       </div>
       <!--выпадающее меню-->
-      <div class="dropdown_container visually_hidden">
+      <div class="dropdown_container">
         <div class="dropdown">
           <ul>
             <li>
@@ -100,126 +100,138 @@
   </header>
   <main>
     <h1 class="visually_hidden">Интернет-магазин DEVICE</h1>
-    <section>
+    <section class="slydes_container">
       <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
-      <!--1 слайд-->
-      <div class="index_slyde1">
-        <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
-        <div class="index_slyde1_photo">
-          <img src="img/png/slider_1.png"
-           width="384px"
-           height="486px"
-           alt="Самая длинная палка для селфи">
-        </div>
-        <div class="slyde1_description_container">
-          <div class="slyde1_description_upper">
-            <div class="slyde1_description_number">
-              <span>01</span>
-            </div>
-            <div class="slyde1_description_name">
-              <h4>Делай селфи,<br>как Бен Стиллер!</h4>
-            </div>
-          </div>
-          <div class="slyde1_description-info">
-            <p>Самая длинная палка для селфи доступна в нашем магазине.
-                Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-            <div class="slyde_description_link">
-              <a href="#" aria-label="Подробнее">Подробнее</a>
-            </div>
-            <div class="slyde_description_table">
-              <table aria-describedby="Параметры палки для селфи">
-                <tr class="slyde_table table_value">
-                  <td>8,5</td>
-                  <td>5 кг</td>
-                  <td>Карбон</td>
-                </tr>
-                <tr class="slyde_table table_property">
-                  <td>Длина палки</td>
-                  <td>Вес палки</td>
-                  <td>Материал</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
+      <input type="radio" id="btn-1" name="toggle" checked>
+      <input type="radio" id="btn-2" name="toggle">
+      <input type="radio" id="btn-3" name="toggle">
+      <div class="slyde_controls">
+        <label for="btn-1"></label>
+        <label for="btn-2"></label>
+        <label for="btn-3"></label>
       </div>
-      <!--2 слайд-->
-      <div class="index_slyde2 visually_hidden">
-        <h3 class="visually_hidden">Фитнес-браслет</h3>
-        <div class="index_slyde2_photo">
-          <img src="img/png/slider_2.png"
-           width="345px"
-           height="485px"
-           alt="Фитнес-браслет">
-        </div>
-        <div class="slyde2_description_container">
-          <div class="slyde2_description_upper">
-            <div class="slyde2_description_number">
-              <div class="decorativ_line_100_7"></div>
-              <span>02</span>
+      <div class="slyde_inner">
+        <div class="slydes_slyde">
+          <!--1 слайд-->
+          <div class="index_slyde1">
+            <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
+            <div class="index_slyde1_photo">
+              <img src="img/png/slider_1.png"
+               width="384px"
+               height="486px"
+               alt="Самая длинная палка для селфи">
             </div>
-            <div class="slyde2_description_name">
-              <h4>Худеем<br>правильно!</h4>
-            </div>
-          </div>
-          <div class="slyde2_description-info">
-            <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-               не пропускать занятия и соблюдать диету.</p>
-            <div class="slyde_description_link">
-              <div class="decorativ_line_220_8"></div>
-              <a href="#" aria-label="Подробнее">Подробнее</a>
-            </div>
-            <div class="slyde_description_table">
-              <table>
-                <tr class="slyde_table table_value">
-                  <td>48 часов</td>
-                </tr>
-                <tr class="slyde_table table_property">
-                  <td>Без подзарядки</td>
-                </tr>
-              </table>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!--3 слайд-->
-      <div class="index_slyde3 visually_hidden">
-        <h3 class="visually_hidden">Квадрокоптер</h3>
-        <div class="index_slyde3_photo">
-          <img src="img/png/slider_3.png"
-           width="526px"
-           height="334px"
-           alt="Квадрокоптер">
-        </div>
-        <div class="slyde3_description_container">
-          <div class="slyde3_description_upper">
-            <div class="slyde3_description_number">
-              <div class="decorativ_line_100_7"></div>
-              <span>03</span>
-            </div>
-            <div class="slyde3_description_name">
-              <h4>Порхает как бабочка,
-                  жалит как пчела!</h4>
+            <div class="slyde1_description_container">
+              <div class="slyde1_description_upper">
+                <div class="slyde1_description_number">
+                  <span>01</span>
+                </div>
+                <div class="slyde1_description_name">
+                  <h4>Делай селфи,<br>как Бен Стиллер!</h4>
+                </div>
+              </div>
+              <div class="slyde1_description-info">
+                <p>Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                <div class="slyde_description_link">
+                  <a href="#" aria-label="Подробнее">Подробнее</a>
+                </div>
+                <div class="slyde_description_table">
+                  <table aria-describedby="Параметры палки для селфи">
+                    <tr class="slyde_table table_value">
+                      <td>8,5</td>
+                      <td>5 кг</td>
+                      <td>Карбон</td>
+                    </tr>
+                    <tr class="slyde_table table_property">
+                      <td>Длина палки</td>
+                      <td>Вес палки</td>
+                      <td>Материал</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="slyde3_description-info">
-            <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-              мощным лазером, замаскированным под стандартную камеру.</p>
-            <div class="slyde_description_link">
-              <div class="decorativ_line_220_8"></div>
-              <a href="#" aria-label="Подробнее">Подробнее</a>
+          <!--2 слайд-->
+          <div class="index_slyde2 visually_hidden">
+            <h3 class="visually_hidden">Фитнес-браслет</h3>
+            <div class="index_slyde2_photo">
+              <img src="img/png/slider_2.png"
+               width="345px"
+               height="485px"
+               alt="Фитнес-браслет">
             </div>
-            <div class="slyde_description_table">
-              <table aria-describedby="Суперспособности квадрокоптера">
-                <tr class="slyde_table table_value">
-                  <td>800 м</td>
-                  <td>50 м</td>
-                </tr>
-                <tr class="slyde_table table_property">
-                  <td>Дальность полета</td>
-                  <td>Радиус поражения</td>
-                </tr>
-              </table>
+            <div class="slyde2_description_container">
+              <div class="slyde2_description_upper">
+                <div class="slyde2_description_number">
+                  <div class="decorativ_line_100_7"></div>
+                  <span>02</span>
+                </div>
+                <div class="slyde2_description_name">
+                  <h4>Худеем<br>правильно!</h4>
+                </div>
+              </div>
+              <div class="slyde2_description-info">
+                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
+                   не пропускать занятия и соблюдать диету.</p>
+                <div class="slyde_description_link">
+                  <div class="decorativ_line_220_8"></div>
+                  <a href="#" aria-label="Подробнее">Подробнее</a>
+                </div>
+                <div class="slyde_description_table">
+                  <table>
+                    <tr class="slyde_table table_value">
+                      <td>48 часов</td>
+                    </tr>
+                    <tr class="slyde_table table_property">
+                      <td>Без подзарядки</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3 слайд-->
+          <div class="index_slyde3 visually_hidden">
+            <h3 class="visually_hidden">Квадрокоптер</h3>
+            <div class="index_slyde3_photo">
+              <img src="img/png/slider_3.png"
+               width="526px"
+               height="334px"
+               alt="Квадрокоптер">
+            </div>
+            <div class="slyde3_description_container">
+              <div class="slyde3_description_upper">
+                <div class="slyde3_description_number">
+                  <div class="decorativ_line_100_7"></div>
+                  <span>03</span>
+                </div>
+                <div class="slyde3_description_name">
+                  <h4>Порхает как бабочка,
+                      жалит как пчела!</h4>
+                </div>
+              </div>
+              <div class="slyde3_description-info">
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
+                  мощным лазером, замаскированным под стандартную камеру.</p>
+                <div class="slyde_description_link">
+                  <div class="decorativ_line_220_8"></div>
+                  <a href="#" aria-label="Подробнее">Подробнее</a>
+                </div>
+                <div class="slyde_description_table">
+                  <table aria-describedby="Суперспособности квадрокоптера">
+                    <tr class="slyde_table table_value">
+                      <td>800 м</td>
+                      <td>50 м</td>
+                    </tr>
+                    <tr class="slyde_table table_property">
+                      <td>Дальность полета</td>
+                      <td>Радиус поражения</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -309,25 +321,25 @@
         <section>
           <h2 class="visually_hidden">Сервисы</h2>
           <ul class="index_servis_list">
-            <li class="index_servis_item_container">
+            <li class="index_servis_item_container index_servis_item_1">
               <div class="index_servis_item index_servis_item_1">
                 <a href="#" aria-label="Доставка">Доставка</a>
               </div>
             </li>
-            <li class="index_servis_item_container">
+            <li class="index_servis_item_container index_servis_item_2">
               <div class="index_servis_item index_servis_item_2">
                 <a href="#" aria-label="Гарантия">Гарантия</a>
               </div>
             </li>
-            <li class="index_servis_item_container">
+            <li class="index_servis_item_container index_servis_item_3">
               <div class="index_servis_item index_servis_item_3">
                 <a href="#" aria-label="Кредит">Кредит</a>
               </div>
             </li>
           </ul>
         </section>
-        <section>
-          <div class="servis_delivery_container visually_hidden">
+        <section class="delivery_window">
+          <div class="servis_delivery_container">
             <div class="servis_delivery">
               <div class="delivery">
                 <h2>Доставка</h2>
@@ -338,8 +350,8 @@
           </div>
         </section>
         <!--Блок гарантии-->
-        <section class="">
-          <div class="servis_warrant_container visually_hidden">
+        <section class="warrant_window visually_hidden">
+          <div class="servis_warrant_container">
             <div class="servis_warrant">
               <div class="warrant">
                 <h2>Гарантия</h2>
@@ -350,7 +362,7 @@
           </div>
         </section>
         <!--Блок кредита-->
-        <section class="">
+        <section class="credit_window visually_hidden">
           <div class="servis_credit_container">
             <div class="servis_credit">
               <div class="credit">
@@ -424,7 +436,7 @@
           <h2>Контакты</h2>
           <div class="excerpt_location_container">
             <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <a href="#" aria-label="Большая карта с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+            <a class="link_map" href="#" aria-label="Большая карта с расположением офиса по адресу: Москва, улица Строителей, дом 15">
               <img src="img/png/map.png"
               width="560px"
               height="222px"
@@ -432,66 +444,11 @@
             </a>
           </div>
           <div class="info_device_link">
-            <a href="#" aria-label="Напишите нам">Напишите нам</a>
+            <a class="link_write_us" href="#" aria-label="Напишите нам">Напишите нам</a>
           </div>
         </section>
       </div>
     </div>
-    <!--напишите нам-->
-    <div class="write_us_container">
-      <form class="write_us" method="POST" action="#">
-        <p class="write_us_item">
-          <label class="" for="input_name">Ваше имя:</label>
-          <input type="text"
-          id="input_name"
-          name="name"
-          value="Имя Фамилия">
-        </p>
-        <p class="write_us_item">
-          <label class="" for="input_e_mail">Ваш e-mail:</label>
-          <input type="e-mail"
-           id="input_e_mail"
-           name="e-mail"
-           value="e-mail@example.com">
-        </p>
-        <p class="write_us_textarea">
-          <label for="textarea_for_letter">Текст письма:</label>
-          <textarea rows="4"
-           id="textarea_for_letter"
-           name="letter"
-           value="letter">
-           В свободной форме
-           </textarea>
-        </p>
-        <div class="write_us_button">
-          <button class="button" type="submit">Отправить</button>
-        </div>
-      </form>
-      <div class="wtite_us_icon_close_container">
-        <button class="wtite_us_icon_close" type="button" aria-label="Закрыть">
-          <img src="img/png/modal_close.png"
-          width="55px"
-          height="55px"
-          alt="Закрыть">
-        </button>
-      </div>
-    </div>
-    <!--конец напишите нам-->
-    <!--попап с картой-->
-    <div class="map_big_container">
-      <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7"
-        aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
-        <div class="map_big">
-        </div>
-      </a>
-      <button class="map_big_icon_close" type="button" aria-label="Закрыть">
-        <img src="img/png/modal_close.png"
-        width="55px"
-        height="55px"
-        alt="Закрыть">
-      </button>
-    </div>
-    <!--конец попапа с картой-->
   </main>
   <footer>
     <div class="footer_index">
@@ -631,6 +588,197 @@
       </div>
     </div>
   </footer>
-  <script src="#"></script>
+  <!--напишите нам-->
+  <div class="modal_write_us">
+    <section class="write_us_container">
+      <h2 class="visually_hidden">Форма обратной связи</h2>
+      <form class="write_us" method="POST" action="#">
+        <p class="write_us_item">
+          <label class="" for="input_name">Ваше имя:</label>
+          <input type="text"
+          id="input_name"
+          name="name"
+          value="">
+        </p>
+        <p class="write_us_item">
+          <label class="" for="input_e_mail">Ваш e-mail:</label>
+          <input type="e-mail"
+           id="input_e_mail"
+           name="e-mail"
+           value="">
+        </p>
+        <p class="write_us_textarea">
+          <label for="textarea_for_letter">Текст письма:</label>
+          <textarea rows="4"
+           id="textarea_for_letter"
+           name="letter"
+           value="letter">
+           В свободной форме
+           </textarea>
+        </p>
+        <div class="write_us_button">
+          <button class="button" type="submit">Отправить</button>
+        </div>
+      </form>
+      <div class="wtite_us_icon_close_container">
+        <button class="wtite_us_icon_close" type="button" aria-label="Закрыть">
+          <img src="img/png/modal_close.png"
+          width="55px"
+          height="55px"
+          alt="Закрыть">
+        </button>
+      </div>
+    </section>
+  </div>
+  <!--конец напишите нам-->
+  <!--попап с картой-->
+  <section class="modal_map_big map_big_container">
+    <h2 class="visually_hidden">Как до нас добраться</h2>
+    <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7"
+      aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+      <div class="map_big">
+      </div>
+    </a>
+    <button class="map_big_icon_close" type="button" aria-label="Закрыть">
+      <img src="img/png/modal_close.png"
+      width="55px"
+      height="55px"
+      alt="Закрыть">
+    </button>
+  </section>
+  <!--конец попапа с картой-->
+  <script>
+  
+var link = document.querySelector(".link_write_us");
+
+var popup = document.querySelector(".modal_write_us");
+var close = document.querySelector(".wtite_us_icon_close");
+var form = document.querySelector(".write_us");
+var nameinput = form.querySelector("[name=name]");
+var email = form.querySelector("[name=e-mail]");
+
+var linkmap = document.querySelector(".link_map");
+
+var popupmap = document.querySelector(".modal_map_big");
+var closemap = document.querySelector(".map_big_icon_close");
+
+var dropdownlink = document.querySelector(".dropdown_plus_link");
+
+var dropdowncontainer = document.querySelector(".dropdown_container");
+
+var isStorageSupport = true;
+
+var storage = "";
+
+var delivery = document.querySelector(".index_servis_item_1");
+var deliverywindow = document.querySelector(".delivery_window");
+var warrant = document.querySelector(".index_servis_item_2");
+var warrantwindow = document.querySelector(".warrant_window");
+var credit = document.querySelector(".index_servis_item_3");
+var creditwindow = document.querySelector(".credit_window");
+
+try {
+  storage = localStorage.getItem("name");
+} catch (err) {
+    isStorageSupport = false;
+}
+
+link.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  
+  popup.classList.add("modal_write_us_show");
+  nameinput.focus();
+
+  if (storage) {
+    nameinput.value = storage;
+    email.focus();
+  } else {
+      nameinput.focus();
+  }
+});
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal_write_us_show");
+});
+
+form.addEventListener("submit", function (evt) {
+  if (!nameinput.value || !email.value) {
+  evt.preventDefault();
+  inputname.classList.add("write_us_item_input_invalid");
+  email.classList.add("write_us_item_input_invalid");
+  }
+  else {
+        if (isStorageSupport) {
+        localStorage.setItem("name", nameinput.value);
+    }
+  }
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+  if (popup.classList.contains("modal_write_us_show")) {
+evt.preventDefault();
+popup.classList.remove("modal-show");
+}
+}
+});
+
+linkmap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  
+  popupmap.classList.add("modal_map_big_show");
+});
+
+closemap.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popupmap.classList.remove("modal_map_big_show");
+});
+
+window.addEventListener("keydown", function (evt) {
+  if (evt.keyCode === 27) {
+  if (popupmap.classList.contains("modal_write_us_show")) {
+    evt.preventDefault();
+    popupmap.classList.remove("modal_map_big_show");
+    }
+  }
+});
+
+dropdownlink.addEventListener("mouseover", function (evt) {
+  evt.preventDefault();
+  
+  dropdowncontainer.classList.add("dropdown_container_show");
+});
+
+dropdownlink.addEventListener("mouseout", function (evt) {
+  evt.preventDefault();
+  
+  dropdowncontainer.classList.remove("dropdown_container_show");
+});
+
+delivery.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  
+  deliverywindow.classList.remove("visually_hidden");
+  warrantwindow.classList.add("visually_hidden");
+  creditwindow.classList.add("visually_hidden");
+});
+
+warrant.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  
+  deliverywindow.classList.add("visually_hidden");
+  warrantwindow.classList.remove("visually_hidden");
+  creditwindow.classList.add("visually_hidden");
+});
+
+credit.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  
+  deliverywindow.classList.add("visually_hidden");
+  warrantwindow.classList.add("visually_hidden");
+  creditwindow.classList.remove("visually_hidden");
+});
+  </script>
 </body>
 </html>

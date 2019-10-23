@@ -71,9 +71,9 @@
         </nav>
       </div>
     </div>
-    <!--выпадающее меню-->
+
     <div class="dropdown_container">
-      <div class="dropdown dropdown_catalog visually_hidden">
+      <div class="dropdown dropdown_catalog">
         <ul>
           <li>
             <a href="#" aria-label="Виртуальная реальность">Виртуальная реальность</a>
@@ -474,6 +474,61 @@
       </div>
     </div>
   </footer>
-  <script src="#"></script>
+  <script>
+  
+    var link = document.querySelector(".link_write_us");
+    
+    var popup = document.querySelector(".modal_write_us");
+    var close = document.querySelector(".wtite_us_icon_close");
+    var form = document.querySelector(".write_us");
+    var nameinput = form.querySelector("[name=name]");
+    
+    var linkmap = document.querySelector(".link_map");
+    
+    var popupmap = document.querySelector(".modal_map_big");
+    var closemap = document.querySelector(".map_big_icon_close");
+    
+    var dropdownlink = document.querySelector(".dropdown_plus_link");
+    
+    var dropdowncontainer = document.querySelector(".dropdown_container");
+    
+    
+    link.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      
+      popup.classList.add("modal_write_us_show");
+      nameinput.focus();
+    });
+    
+    close.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popup.classList.remove("modal_write_us_show");
+    });
+    
+    linkmap.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      
+      popupmap.classList.add("modal_map_big_show");
+    });
+    
+    closemap.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      popupmap.classList.remove("modal_map_big_show");
+    });
+    
+    dropdownlink.addEventListener("mouseover", function (evt) {
+      evt.preventDefault();
+      
+      dropdowncontainer.classList.add("dropdown_container_show");
+    });
+    
+    dropdownlink.addEventListener("mouseout", function (evt) {
+      evt.preventDefault();
+      
+      dropdowncontainer.classList.remove("dropdown_container_show");
+    });
+    
+    
+      </script>
 </body>
 </html>

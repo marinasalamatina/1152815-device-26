@@ -23,6 +23,7 @@
   font-style: normal;
 }
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   font-family: "OpenSans-Light", Helvetica, sans-serif;
@@ -576,6 +577,13 @@ a {
   margin-right: 93px;
   margin-left: 60px;
 }
+.dropdown_container {
+  display: none;
+}
+.dropdown_container_show {
+  display: block;
+  z-index: 2;
+}
 .dropdown ul {
   padding: 0;
   margin: 0;
@@ -599,7 +607,7 @@ a {
   width: 1039px;
   min-height: 90px;
   padding-right: 61px;
-  padding-bottom: 30px;
+  padding-bottom: 22px;
   padding-left: 60px;
   margin-top: auto;
   background-color: #f7e296;
@@ -616,6 +624,7 @@ a {
 }
 .dropdown_catalog {
   margin: 0 auto;
+  margin-bottom: -100px;
 }
 .info_device {
   width: 1160px;
@@ -772,6 +781,7 @@ a {
 }
 .catalog_title h1{
   margin-bottom: 0;
+  z-index: -1;
 }
 .breadcrumbs {
   padding: 0;
@@ -1265,11 +1275,9 @@ a {
 }
 .write_us_container {
   padding: 0;
-  margin: 0;
   width: 860px;
   height: 517px;
   padding: 0;
-  margin: 0 auto;
   padding-left: 100px;
   padding-bottom: 36px;
   display: flex;
@@ -1320,7 +1328,7 @@ a {
   background-color: #ffffff;
   border: 3px solid #f7e296;
 }
-.write_us_item input:invalid {
+.write_us_item_input_invalid {
   color: #b09f9f;
   background-color: #f6dada;
 }
@@ -1353,7 +1361,6 @@ a {
 .map_big_container {
   width: 960px;
   height: 559px;
-  margin: 0 auto;
   box-shadow: 0px 15px 20px 3px #d4d4d4;
   position: relative;
   overflow: hidden;
@@ -1879,4 +1886,115 @@ a {
 }
 .form_compare:active button{
   color: #cccccc;
+}
+.modal_write_us {
+  display: none;
+  position: absolute;
+  top: 1056px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.modal_write_us_show {
+  display: block;
+  position: absolute;
+  top: 1056px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #ffffff;
+  z-index: 1;
+}
+.modal_map_big {
+  display: none;
+  position: absolute;
+  top: 1852px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #ffffff;
+}
+.modal_map_big_show {
+  display: block;
+  position: absolute;
+  top: 1852px;
+  left: 50%;
+  margin-left: -480px;
+  background-color: #ffffff;
+}
+.slydes_container {
+  position: relative;
+  width: 1039px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+.slyde_inner {
+  width: 1039px;
+  overflow: hidden;
+}
+.slydes_slyde {
+  width: 3117px;
+  display: flex;
+}
+.slydes_container input[type="radio"] {
+
+}
+.slyde_controls {
+  display: flex;
+  position: absolute;
+  top: 200px;
+  right: 0px;
+}
+.slyde_controls label {
+  position: relative;
+  margin-left: 20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+#btn-1:checked~.slyde_controls label[for="btn-1"]:before,
+.slyde_controls label[for="btn-1"]:checked .slyde_controls label[for="btn-1"]:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+#btn-1:checked~.slyde_inner .slydes_slyde {
+  transform: translate(0);
+}
+#btn-2:checked~.slyde_controls label[for="btn-2"]:before,
+.slyde_controls label[for="btn-2"]:checked .slyde_controls label[for="btn-2"]:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+}
+#btn-2:checked~.slyde_inner .slydes_slyde {
+  transform: translate(-1039px);
+}
+#btn-3:checked~.slyde_inner .slydes_slyde {
+  transform: translate(-2078px);
+}
+#btn-3:checked~.slyde_controls label[for="btn-3"]:before,
+.slyde_controls label[for="btn-3"]:checked .slyde_controls label[for="btn-3"]:before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 0;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  border: 2px solid #000000;
 }

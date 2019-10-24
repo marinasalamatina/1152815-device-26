@@ -923,7 +923,6 @@ a {
   justify-content: space-between;
   margin-top: 20px;
   padding: 0;
-  padding-top: 24;
   padding-bottom: 45px;
 }
 .goods_items_info h3 {
@@ -1736,7 +1735,6 @@ a {
   top: 0;
   height: 40px;
   margin: 0;
-  transition: all 0.3s linear;
 }
 .services_slider_input:focus ~ .services_slider_controls label {
   outline: 1px dotted #212121;
@@ -1754,7 +1752,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-1"]:checked ~ .services_slider_controls label[for="services-control-1"]::after {
   top: 1px;
@@ -1764,7 +1761,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-2"]:checked ~ .services_slider_controls label[for="services-control-2"]::before {
   top: 0;
@@ -1773,7 +1769,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-2"]:checked ~ .services_slider_controls label[for="services-control-2"]::after {
   top: 0;
@@ -1783,7 +1778,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-3"]:checked ~ .services_slider_controls label[for="services-control-3"]::before {
   top: 0;
@@ -1792,7 +1786,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-3"]:checked ~ .services_slider_controls label[for="services-control-3"]::after {
   top: 0;
@@ -1802,7 +1795,6 @@ a {
   margin: 0;
   color: #f7e184;
   background-color: #000000;
-  transition: all 0.3s linear;
 }
 .services_slider_input[id="services-control-2"]:checked ~ .services_slider_controls label[for="services-control-2"]::before,
 .services_slider_input[id="services-control-3"]:checked ~ .services_slider_controls label[for="services-control-3"]::before,

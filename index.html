@@ -100,141 +100,75 @@
   </header>
   <main>
     <h1 class="visually_hidden">Интернет-магазин DEVICE</h1>
-    <section class="slydes_container">
-      <h2 class="visually_hidden">Краткий обзор самых популярных товаров</h2>
-      <input type="radio" id="btn-1" name="toggle" checked>
-      <input type="radio" id="btn-2" name="toggle">
-      <input type="radio" id="btn-3" name="toggle">
-      <div class="slyde_controls">
-        <label for="btn-1"></label>
-        <label for="btn-2"></label>
-        <label for="btn-3"></label>
-      </div>
-      <div class="slyde_inner">
-        <div class="slydes_slyde">
-          <!--1 слайд-->
-          <div class="index_slyde1">
-            <h3 class="visually_hidden">Самая длинная палка для селфи</h3>
-            <div class="index_slyde1_photo">
-              <img src="img/png/slider_1.png"
-               width="384px"
-               height="486px"
-               alt="Самая длинная палка для селфи">
-            </div>
-            <div class="slyde1_description_container">
-              <div class="slyde1_description_upper">
-                <div class="slyde1_description_number">
-                  <span>01</span>
-                </div>
-                <div class="slyde1_description_name">
-                  <h4>Делай селфи,<br>как Бен Стиллер!</h4>
-                </div>
-              </div>
-              <div class="slyde1_description-info">
-                <p>Самая длинная палка для селфи доступна в нашем магазине.
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-                <div class="slyde_description_link">
-                  <a href="#" aria-label="Подробнее">Подробнее</a>
-                </div>
-                <div class="slyde_description_table">
-                  <table aria-describedby="Параметры палки для селфи">
-                    <tr class="slyde_table table_value">
-                      <td>8,5</td>
-                      <td>5 кг</td>
-                      <td>Карбон</td>
-                    </tr>
-                    <tr class="slyde_table table_property">
-                      <td>Длина палки</td>
-                      <td>Вес палки</td>
-                      <td>Материал</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
+    <section class="promo_slider">
+      <h2 class="visually_hidden">Промо-слайдер</h2>
+      <input class="promo_slider_input  visually_hidden" id="promo-control-1" type="radio" name="promo-control" checked>
+      <input class="promo_slider_input  visually_hidden" id="promo-control-2" type="radio" name="promo-control">
+      <input class="promo_slider_input  visually_hidden" id="promo-control-3" type="radio" name="promo-control">
+      <div class="promo_slider_item  promo_slider_item_1">
+        <div class="promo_slider_img_wrap  promo_slider_img_wrap_01">
+          <img src="img/png/slider_1.png" alt="Самая длинная палка для селфи" width="384" height="486">
+        </div>
+        <div class="promo_slider_descr_wrap  promo_slider_descr_wrap_1">
+          <b>Делай селфи,<br>как Бен Стиллер!</b>
+          <p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div class="slyde_description_link">
+            <a class="btn" href="#">Подробнее</a>
           </div>
-          <!--2 слайд-->
-          <div class="index_slyde2 visually_hidden">
-            <h3 class="visually_hidden">Фитнес-браслет</h3>
-            <div class="index_slyde2_photo">
-              <img src="img/png/slider_2.png"
-               width="345px"
-               height="485px"
-               alt="Фитнес-браслет">
-            </div>
-            <div class="slyde2_description_container">
-              <div class="slyde2_description_upper">
-                <div class="slyde2_description_number">
-                  <div class="decorativ_line_100_7"></div>
-                  <span>02</span>
-                </div>
-                <div class="slyde2_description_name">
-                  <h4>Худеем<br>правильно!</h4>
-                </div>
-              </div>
-              <div class="slyde2_description-info">
-                <p>Мотивирующие фитнес-браслеты помогут найти в себе силы
-                   не пропускать занятия и соблюдать диету.</p>
-                <div class="slyde_description_link">
-                  <div class="decorativ_line_220_8"></div>
-                  <a href="#" aria-label="Подробнее">Подробнее</a>
-                </div>
-                <div class="slyde_description_table">
-                  <table>
-                    <tr class="slyde_table table_value">
-                      <td>48 часов</td>
-                    </tr>
-                    <tr class="slyde_table table_property">
-                      <td>Без подзарядки</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--3 слайд-->
-          <div class="index_slyde3 visually_hidden">
-            <h3 class="visually_hidden">Квадрокоптер</h3>
-            <div class="index_slyde3_photo">
-              <img src="img/png/slider_3.png"
-               width="526px"
-               height="334px"
-               alt="Квадрокоптер">
-            </div>
-            <div class="slyde3_description_container">
-              <div class="slyde3_description_upper">
-                <div class="slyde3_description_number">
-                  <div class="decorativ_line_100_7"></div>
-                  <span>03</span>
-                </div>
-                <div class="slyde3_description_name">
-                  <h4>Порхает как бабочка,
-                      жалит как пчела!</h4>
-                </div>
-              </div>
-              <div class="slyde3_description-info">
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
-                  мощным лазером, замаскированным под стандартную камеру.</p>
-                <div class="slyde_description_link">
-                  <div class="decorativ_line_220_8"></div>
-                  <a href="#" aria-label="Подробнее">Подробнее</a>
-                </div>
-                <div class="slyde_description_table">
-                  <table aria-describedby="Суперспособности квадрокоптера">
-                    <tr class="slyde_table table_value">
-                      <td>800 м</td>
-                      <td>50 м</td>
-                    </tr>
-                    <tr class="slyde_table table_property">
-                      <td>Дальность полета</td>
-                      <td>Радиус поражения</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
+          <div class="promo_slider_advantages  promo_slider_advantages_1">
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_first">8,5 м</div>
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_second">5 кг</div>
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_third">Карбон</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_first">Длина палки</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_second">Вес палки</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_third">Материал</div>
           </div>
         </div>
+      </div>
+      <div class="promo_slider_item  promo_slider_item_2">
+        <div class="promo_slider_img_wrap  promo_slider_img_wrap_02">
+          <img src="img/png/slider_2.png" alt="Фитнес-браслет" width="345" height="485">
+        </div>
+        <div class="promo_slider_descr_wrap  promo_slider_descr_wrap_2">
+          <b>Худеем<br>правильно!</b>
+          <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+          <div class="slyde_description_link">
+            <a class="btn" href="#">Подробнее</a>
+          </div>
+          <div class="promo_slider_advantages  promo_slider_advantages_2">
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_first">48 часов</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_first">Без подзарядки</div>
+          </div>
+        </div>
+      </div>
+      <div class="promo_slider_item  promo_slider_item_3">
+        <div class="promo_slider_img_wrap  promo_slider_img_wrap_03">
+          <img src="img/png/slider_3.png" alt="Квадрокоптер" width="526" height="334">
+        </div>
+        <div class="promo_slider_descr_wrap  promo_slider_descr_wrap_3">
+          <b>Порхает как бабочка, жалит как пчела!</b>
+          <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+          <div class="slyde_description_link">
+            <a class="btn" href="#">Подробнее</a>
+          </div>
+          <div class="promo_slider_advantages  promo_slider_advantages_3">
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_first">800 м</div>
+            <div class="promo_slider_advantages_col  promo_slider_advantages_col_second">50 м</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_first">Дальность полета</div>
+            <div class="promo_slider_advantages_descr  promo_slider_advantages_descr_second">Радиус поражения</div>
+          </div>
+        </div>
+      </div>
+      <div class="promo_slider_controls">
+        <label class="promo_slider_control" for="promo-control-1">
+          <span class="visually_hidden">Первый слайд</span>
+        </label>
+        <label class="promo_slider_control" for="promo-control-2">
+          <span class="visually_hidden">Второй слайд</span>
+        </label>
+        <label class="promo_slider_control" for="promo-control-3">
+          <span class="visually_hidden">Третий слайд</span>
+        </label>
       </div>
     </section>
     <!--Картинки-меню с ссылками-->
@@ -316,66 +250,34 @@
       </ul>
     </section>
     <!--Блок с сервисами-->
-    <div class="index_servis">
-      <div class="index_servis_container">
-        <section>
-          <h2 class="visually_hidden">Сервисы</h2>
-          <ul class="index_servis_list">
-            <li class="index_servis_item_container index_servis_item_1">
-              <div class="index_servis_item index_servis_item_1">
-                <a href="#" aria-label="Доставка">Доставка</a>
-              </div>
-            </li>
-            <li class="index_servis_item_container index_servis_item_2">
-              <div class="index_servis_item index_servis_item_2">
-                <a href="#" aria-label="Гарантия">Гарантия</a>
-              </div>
-            </li>
-            <li class="index_servis_item_container index_servis_item_3">
-              <div class="index_servis_item index_servis_item_3">
-                <a href="#" aria-label="Кредит">Кредит</a>
-              </div>
-            </li>
-          </ul>
-        </section>
-        <section class="delivery_window">
-          <div class="servis_delivery_container">
-            <div class="servis_delivery">
-              <div class="delivery">
-                <h2>Доставка</h2>
-                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-              </div>
-            </div>
+    <section class="services-slider">
+      <div class="container">
+        <div class="services_slider_wrap">
+          <h2 class="visually_hidden">Наши сервисы</h2>
+          <input class="services_slider_input  visually_hidden" id="services-control-1" type="radio" name="services-control" checked>
+          <input class="services_slider_input  visually_hidden" id="services-control-2" type="radio" name="services-control">
+          <input class="services_slider_input  visually_hidden" id="services-control-3" type="radio" name="services-control">
+
+          <div class="services_slider_item  services_slider_item_active  services_slider_item_delivery">
+            <h3>Доставка</h3>
+            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </div>
-        </section>
-        <!--Блок гарантии-->
-        <section class="warrant_window visually_hidden">
-          <div class="servis_warrant_container">
-            <div class="servis_warrant">
-              <div class="warrant">
-                <h2>Гарантия</h2>
-                <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br>
-                    Товар, не дом, конечно же.</p>
-              </div>
-            </div>
+          <div class="services_slider_item  services_slider_item_warranty">
+            <h3>Гарантия</h3>
+            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом &mdash; не переживайте, мы выдадим вам новый.<br>Товар, не дом, конечно же.</p>
           </div>
-        </section>
-        <!--Блок кредита-->
-        <section class="credit_window visually_hidden">
-          <div class="servis_credit_container">
-            <div class="servis_credit">
-              <div class="credit">
-                <h2>Кредит</h2>
-                <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                    условия кредита. Выгодные для нашего банка, разумеется.</p>
-              </div>
-            </div>
+          <div class="services_slider_item  services_slider_item_credit">
+            <h3>Кредит</h3>
+            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
           </div>
-        </section>
+          <div class="services_slider_controls">
+            <label class="services_slider_control  services_slider_control_active" for="services-control-1">Доставка</label>
+            <label class="services_slider_control" for="services-control-2">Гарантия</label>
+            <label class="services_slider_control" for="services-control-3">Кредит</label>
+          </div>
+        </div>
       </div>
-    </div>
-    <!--Блок с логотипами-->
+    </section>
     <section>
     <h2  class="visually_hidden">Логотипы партнёров</h2>
       <ul class="logo_partner">
@@ -588,7 +490,7 @@
       </div>
     </div>
   </footer>
-  <!--напишите нам-->
+
   <div class="modal_write_us">
     <section class="write_us_container">
       <h2 class="visually_hidden">Форма обратной связи</h2>
@@ -630,8 +532,7 @@
       </div>
     </section>
   </div>
-  <!--конец напишите нам-->
-  <!--попап с картой-->
+
   <section class="modal_map_big map_big_container">
     <h2 class="visually_hidden">Как до нас добраться</h2>
     <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7"
@@ -646,139 +547,139 @@
       alt="Закрыть">
     </button>
   </section>
-  <!--конец попапа с картой-->
+
   <script>
-  
-var link = document.querySelector(".link_write_us");
 
-var popup = document.querySelector(".modal_write_us");
-var close = document.querySelector(".wtite_us_icon_close");
-var form = document.querySelector(".write_us");
-var nameinput = form.querySelector("[name=name]");
-var email = form.querySelector("[name=e-mail]");
+  var link = document.querySelector(".link_write_us");
 
-var linkmap = document.querySelector(".link_map");
+  var popup = document.querySelector(".modal_write_us");
+  var close = document.querySelector(".wtite_us_icon_close");
+  var form = document.querySelector(".write_us");
+  var nameinput = form.querySelector("[name=name]");
+  var email = form.querySelector("[name=e-mail]");
 
-var popupmap = document.querySelector(".modal_map_big");
-var closemap = document.querySelector(".map_big_icon_close");
+  var linkmap = document.querySelector(".link_map");
 
-var dropdownlink = document.querySelector(".dropdown_plus_link");
+  var popupmap = document.querySelector(".modal_map_big");
+  var closemap = document.querySelector(".map_big_icon_close");
 
-var dropdowncontainer = document.querySelector(".dropdown_container");
+  var dropdownlink = document.querySelector(".dropdown_plus_link");
 
-var isStorageSupport = true;
+  var dropdowncontainer = document.querySelector(".dropdown_container");
 
-var storage = "";
+  var isStorageSupport = true;
 
-var delivery = document.querySelector(".index_servis_item_1");
-var deliverywindow = document.querySelector(".delivery_window");
-var warrant = document.querySelector(".index_servis_item_2");
-var warrantwindow = document.querySelector(".warrant_window");
-var credit = document.querySelector(".index_servis_item_3");
-var creditwindow = document.querySelector(".credit_window");
+  var storage = "";
 
-try {
-  storage = localStorage.getItem("name");
-} catch (err) {
-    isStorageSupport = false;
-}
+  var delivery = document.querySelector(".index_servis_item_1");
+  var deliverywindow = document.querySelector(".delivery_window");
+  var warrant = document.querySelector(".index_servis_item_2");
+  var warrantwindow = document.querySelector(".warrant_window");
+  var credit = document.querySelector(".index_servis_item_3");
+  var creditwindow = document.querySelector(".credit_window");
 
-link.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-  popup.classList.add("modal_write_us_show");
-  nameinput.focus();
-
-  if (storage) {
-    nameinput.value = storage;
-    email.focus();
-  } else {
-      nameinput.focus();
+  try {
+    storage = localStorage.getItem("name");
+  } catch (err) {
+      isStorageSupport = false;
   }
-});
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal_write_us_show");
-});
+  link.addEventListener("click", function (evt) {
+    evt.preventDefault();
 
-form.addEventListener("submit", function (evt) {
-  if (!nameinput.value || !email.value) {
-  evt.preventDefault();
-  inputname.classList.add("write_us_item_input_invalid");
-  email.classList.add("write_us_item_input_invalid");
-  }
-  else {
-        if (isStorageSupport) {
-        localStorage.setItem("name", nameinput.value);
+    popup.classList.add("modal_write_us_show");
+    nameinput.focus();
+
+    if (storage) {
+      nameinput.value = storage;
+      email.focus();
+    } else {
+        nameinput.focus();
     }
+  });
+
+  close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    popup.classList.remove("modal_write_us_show");
+  });
+
+  form.addEventListener("submit", function (evt) {
+    if (!nameinput.value || !email.value) {
+    evt.preventDefault();
+    inputname.classList.add("write_us_item_input_invalid");
+    email.classList.add("write_us_item_input_invalid");
+    }
+    else {
+          if (isStorageSupport) {
+          localStorage.setItem("name", nameinput.value);
+      }
+    }
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+    if (popup.classList.contains("modal_write_us_show")) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
   }
-});
+  }
+  });
 
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-  if (popup.classList.contains("modal_write_us_show")) {
-evt.preventDefault();
-popup.classList.remove("modal-show");
-}
-}
-});
+  linkmap.addEventListener("click", function (evt) {
+    evt.preventDefault();
 
-linkmap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-  popupmap.classList.add("modal_map_big_show");
-});
+    popupmap.classList.add("modal_map_big_show");
+  });
 
-closemap.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popupmap.classList.remove("modal_map_big_show");
-});
-
-window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-  if (popupmap.classList.contains("modal_write_us_show")) {
+  closemap.addEventListener("click", function (evt) {
     evt.preventDefault();
     popupmap.classList.remove("modal_map_big_show");
+  });
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+    if (popupmap.classList.contains("modal_write_us_show")) {
+      evt.preventDefault();
+      popupmap.classList.remove("modal_map_big_show");
+      }
     }
-  }
-});
+  });
 
-dropdownlink.addEventListener("mouseover", function (evt) {
-  evt.preventDefault();
-  
-  dropdowncontainer.classList.add("dropdown_container_show");
-});
+  dropdownlink.addEventListener("mouseover", function (evt) {
+    evt.preventDefault();
 
-dropdownlink.addEventListener("mouseout", function (evt) {
-  evt.preventDefault();
-  
-  dropdowncontainer.classList.remove("dropdown_container_show");
-});
+    dropdowncontainer.classList.add("dropdown_container_show");
+  });
 
-delivery.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-  deliverywindow.classList.remove("visually_hidden");
-  warrantwindow.classList.add("visually_hidden");
-  creditwindow.classList.add("visually_hidden");
-});
+  dropdownlink.addEventListener("mouseout", function (evt) {
+    evt.preventDefault();
 
-warrant.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-  deliverywindow.classList.add("visually_hidden");
-  warrantwindow.classList.remove("visually_hidden");
-  creditwindow.classList.add("visually_hidden");
-});
+    dropdowncontainer.classList.remove("dropdown_container_show");
+  });
 
-credit.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  
-  deliverywindow.classList.add("visually_hidden");
-  warrantwindow.classList.add("visually_hidden");
-  creditwindow.classList.remove("visually_hidden");
-});
+  delivery.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    deliverywindow.classList.remove("visually_hidden");
+    warrantwindow.classList.add("visually_hidden");
+    creditwindow.classList.add("visually_hidden");
+  });
+
+  warrant.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    deliverywindow.classList.add("visually_hidden");
+    warrantwindow.classList.remove("visually_hidden");
+    creditwindow.classList.add("visually_hidden");
+  });
+
+  credit.addEventListener("click", function (evt) {
+    evt.preventDefault();
+
+    deliverywindow.classList.add("visually_hidden");
+    warrantwindow.classList.add("visually_hidden");
+    creditwindow.classList.remove("visually_hidden");
+  });
   </script>
 </body>
 </html>

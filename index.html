@@ -20,7 +20,6 @@
         alt="логотип магазина DEVICE">
       </div>
       <div class="header_index">
-        <!--Форма поиска-->
         <form class="search_form" action="#" method="get">
           <div class="search_container">
             <input type="text" aria-label="Поиск по сайту" placeholder="Поиск по сайту">
@@ -67,7 +66,6 @@
           </ul>
         </nav>
       </div>
-      <!--выпадающее меню-->
       <div class="dropdown_container">
         <div class="dropdown">
           <ul>
@@ -171,7 +169,6 @@
         </label>
       </div>
     </section>
-    <!--Картинки-меню с ссылками-->
     <section>
       <h2 class="visually_hidden">Категории товаров</h2>
       <ul class="index_range">
@@ -249,7 +246,6 @@
         </li>
       </ul>
     </section>
-    <!--Блок с сервисами-->
     <section class="services-slider">
       <div class="container">
         <div class="services_slider_wrap">
@@ -257,7 +253,6 @@
           <input class="services_slider_input  visually_hidden" id="services-control-1" type="radio" name="services-control" checked>
           <input class="services_slider_input  visually_hidden" id="services-control-2" type="radio" name="services-control">
           <input class="services_slider_input  visually_hidden" id="services-control-3" type="radio" name="services-control">
-
           <div class="services_slider_item  services_slider_item_active  services_slider_item_delivery">
             <h3>Доставка</h3>
             <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
@@ -405,7 +400,9 @@
               <a href="#" aria-label="Контакты">Контакты</a>
             </li>
           </ul>
-          <p> Тел.: +7 (495) 495-95-95</p>
+          <p class="footer_index_info_tel">
+            <a href="tel:+7-495-95-95">Тел.: +7 (495) 495-95-95</a>
+          </p>
         </div>
         <div class="footer_other_sites">
           <div class="social">
@@ -496,22 +493,23 @@
           <input type="text"
           id="input_name"
           name="name"
-          value="">
+          value=""
+          placeholder="Имя Фамилия">
         </p>
         <p class="write_us_item">
           <label class="" for="input_email">Ваш e-mail:</label>
           <input type="email"
            id="input_email"
            name="email"
-           value="">
+           value=""
+           placeholder="email@example.com">
         </p>
         <p class="write_us_textarea">
           <label for="textarea_for_letter">Текст письма:</label>
           <textarea rows="4"
            id="textarea_for_letter"
-           name="letter">
-           В свободной форме
-           </textarea>
+           name="letter"
+           placeholder="В свободной форме"></textarea>
         </p>
         <div class="write_us_button">
           <button class="button" type="submit">Отправить</button>
@@ -528,11 +526,12 @@
     </section>
   </div>
 
-  <section class="modal_map_big map_big_container">
+  <section class="modal_map_big">
     <h2 class="visually_hidden">Как до нас добраться</h2>
-    <a href="https://goo.gl/maps/1S3coPB1xaYT6qeN7"
-      aria-label="Сервис карт GOOGLE с расположением офиса по адресу: Москва, улица Строителей, дом 15">
-      <div class="map_big">
+    <iframe src="https://yandex.ru/map-widget/v1/-/CGDtM6NW" width="960" height="559"></iframe>
+    <a href="https://yandex.ru/maps/23/murmansk/?ll=33.074981%2C68.970682&z=13"
+    aria-label="Сервис карт YANDEX с расположением офиса по адресу: Москва, улица Строителей, дом 15">
+      <div class="map_big_container">
       </div>
     </a>
     <button class="map_big_icon_close" type="button" aria-label="Закрыть">
@@ -542,6 +541,7 @@
       alt="Закрыть">
     </button>
   </section>
+
   <script src="js/script.js"></script>
 </body>
 </html>
